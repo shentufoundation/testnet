@@ -36,13 +36,13 @@ The final full stage of testnet 1.0 starts when the open beta stage exits with a
 
 During this stage, testnet backend and frontend are exepcted to receive on-demand updates. Branching instead of re-deployment will be preferred when solving chain divergence. The validator set size will be large (e.g., no more than 100).
 
-# How To Participate
+# How to Participate
 
 The [CertiK Chain Explorer](https://explorer.certik.foundation/) is public accessible and can be used to query on various status of the chain on the web.
 
 To do transactions on the chain, all alpha testers need to apply via the [CertiK Foundation website](https://certik.foundation/).
 
-Currently, chain transactions as well as chain account creation can only be performed via the CLI tool. In the near future web wallet will be supported to allow using the chain without the CLI tool.
+Currently, chain transactions as well as chain account creation can only be performed via the CLI tool or CLI-based RESTful server. In the near future web wallet will be supported to allow using the chain without the CLI tool.
 
 ## Use CLI Tool to Access Testnet
 
@@ -228,3 +228,40 @@ Currently, CVM has the following known limitations.
 * No `CertiK Chain` specific features have been enabled.
 * Smart contract execution gas model has not been implemented.
 * Event has not been implemented.
+* Only a single smart contract from a single Solidity file can be deployed at a time from CLI. (Compiled smart contract from multiple files can be deployed via RESTful endpoints in the near future).
+
+## Use RESTful Endpoints to Access Testnet
+
+To start a local RESTful server connected to the full node connected above
+
+```
+certikcli rest-server
+```
+
+For example, to query the current validators
+
+```
+curl -s http://localhost:1317/staking/validators
+```
+
+Here are some query endpoints.
+
+```
+/blocks/latest
+/blocks/{height}
+/ckg/balance/{address}
+/ckg/issuance/{adress}
+/ckt/balance/{address}
+/ckt/issuance/{adress}
+/cvm/abi/{address}
+/cvm/code/{address}
+/cvm/storage/{address}/{key}
+/node_info
+/node_version
+/staking/validators
+/txs
+/txs/{hash}
+/validatorsets/latest
+/validatorsets/{height}
+/version
+```
