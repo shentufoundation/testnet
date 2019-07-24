@@ -62,7 +62,7 @@ certikcli config node tcp://<full node>:<port>
 
 During the closed alpha stage, full nodes for `certikcli` to connect can be obtained from the mailing list. Later in the closed alpha stage you will be allowed to run your own full nodes (or even validators) and connect `certikcli` to them.
 
-Currently `certikcli` runs on Linux x64 only.
+`certikcli` runs on Linux, Windows, and MacOS.
 
 ### Create Test Accounts
 
@@ -137,6 +137,12 @@ To transfer CKT from one account to another.
 
 ```
 certikcli tx ckt transfer <amount of uckt> <recipent address> --from <sender_address> --fees 5000uckg
+```
+
+To transfer CKG from one account to another.
+
+```
+certikcli tx ckg transfer <amount of uckg> <recipent address> --from <sender_address> --fees 5000uckg
 ```
 
 ### CVM Smart Contracts
