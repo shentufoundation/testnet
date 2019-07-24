@@ -139,12 +139,6 @@ To transfer CKT from one account to another.
 certikcli tx ckt transfer <amount of uckt> <recipent address> --from <sender_address> --fees 5000uckg
 ```
 
-To transfer CKG from one account to another.
-
-```
-certikcli tx ckg transfer <amount of uckg> <recipent address> --from <sender_address> --fees 5000uckg
-```
-
 ### CVM Smart Contracts
 
 `CertiK VM`, or CVM, is a core component of the `CertiK Chain`. CVM is compatible with EVM with security-focused extensions. Smart Contracts written in Solidity can be deployed and invoked on the CertiK Chain.
