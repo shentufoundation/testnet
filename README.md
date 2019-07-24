@@ -1,3 +1,5 @@
+[Create Test Account](#create-test-accounts)
+
 # CertiK Chain Testnet 1.0
 
 This repository hosts the `CertiK Chain` implementation and testnet information. More documents and details will be released here over the progress of testnet 1.0.
@@ -63,6 +65,8 @@ During the closed alpha stage, full nodes for `certikcli` to connect can be obta
 Currently `certikcli` runs on Linux x64 only.
 
 ### Create Test Accounts
+
+Make sure you have configured the CLI tool properly as described in the above section.
 
 To use the `CertiK Chain` and do transactions on the chain, one need to first create a chain account and then populate it with test tokens.
 
