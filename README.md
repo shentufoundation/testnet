@@ -67,12 +67,12 @@ To use the `CertiK Chain` and do transactions on the chain, one need to first cr
 First, create an account address and public / private key pair on your computer. In interactions with the chain, public address and key are used frequently. The private key is stored in your local computer and is needed to sign your transaction before submitting.
 
 ```
-$ certikcli keys add jack
+$ certikcli keys add <account name>
 Enter a passphrase to encrypt your key to disk:
 Repeat the passphrase:
 
-NAME:   TYPE:   ADDRESS:                                        PUBKEY:
-jack  local   certik1em9emtwy062sl3hf4gg27evryn5pwr29p2y98j   certikpub1addwnpepqw3gpgwjtam95l9aehm0qftukxemxjfjhxj7rtva75fdecppt2hkyv9fzzn
+NAME:           TYPE:   ADDRESS:            PUBKEY:
+<account name>  local   <account address>   <account public key>
 
 **Important** write this mnemonic phrase in a safe place.
 It is the only way to recover your account if you ever forget your password.
