@@ -108,7 +108,7 @@ certikcli query block <height>
 To query a transaction
 
 ```
-certikci query tx <transaction hash>
+certikcli query tx <transaction hash>
 ```
 
 To query the status of an account
