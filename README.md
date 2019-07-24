@@ -44,6 +44,8 @@ To do transactions on the chain, all alpha testers need to apply via the [CertiK
 
 Currently, chain transactions as well as chain account creation can only be performed via the CLI tool or CLI-based RESTful server. In the near future web wallet will be supported to allow using the chain without the CLI tool.
 
+The latest CLI tool and other binaries can be downloaded from https://github.com/certikfoundation/chain/releases/.
+
 ## Use CLI Tool to Access Testnet
 
 ### CLI Tool Configuration
