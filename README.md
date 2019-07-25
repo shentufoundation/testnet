@@ -87,6 +87,8 @@ It is the only way to recover your account if you ever forget your password.
 
 Then, go to http://explorer.certik.foundation/faucet, submit your test account's address. The account will receive some amount of CKT and CKG tokens for testing purpose. Please do not abuse the faucet as there are only limited number of tokens available for testnet.
 
+You can create multiple accounts for testing purpose.
+
 Please note that the testnet can be restarted often during the alpha testing stage, so you may need to re-create account / re-apply for test tokens on each testnet restart.
 
 ### Queries
