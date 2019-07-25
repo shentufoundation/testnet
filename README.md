@@ -149,6 +149,8 @@ certikcli tx ckg transfer <amount of uckg> <recipent address> --from <sender_add
 
 `CertiK VM`, or CVM, is a core component of the `CertiK Chain`. CVM is compatible with EVM with security-focused extensions. Smart Contracts written in Solidity can be deployed and invoked on the CertiK Chain.
 
+`certikcli` assumes Solidity compiler `solc` is in the path. See [here](https://solidity.readthedocs.io/en/latest/installing-solidity.html) for installation instructions.
+
 To deploy a simple smart contract from file `simple.sol'
 
 ```
