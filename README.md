@@ -46,7 +46,48 @@ To do transactions on the chain, all alpha testers need to apply via the [CertiK
 
 Currently, chain transactions as well as chain account creation can only be performed via the CLI tool or CLI-based RESTful server. In the near future web wallet will be supported to allow using the chain without the CLI tool.
 
-The latest CLI tool and other binaries can be downloaded from https://github.com/certikfoundation/chain/releases/.
+The latest chain node binary and CLI tool binary can be downloaded from https://github.com/certikfoundation/chain/releases/.
+
+## Run A Full Node
+
+During the closed alpha stage, full node addresses for the CLI tool to connect to can be obtained from the mailing list. It is also possible to run your own full nodes and connect the CLI tool to them. Later in the closed alpha stage you will be able to convert your full nodes into validator nodes.
+
+With `certikd` one can run full nodes of the `CertiK Chain`. Its configuration needs to be properly initialized.
+
+```
+rm -rf ~/.certikd
+certikd init
+```
+
+You might want to customize your full node's name. Also, the full node needs to connect some existing nodes of the chain, which can be obtained from the mailing list. Open the node configuration file to edit them.
+
+```
+vi ~/.certikd/config/config.toml
+```
+
+Edit the following lines.
+
+```
+moniker = <node name>
+...
+persistent_peers = <persistent node address>
+```
+
+Then copy the testnet genesis JSON file to the node configuration directory.
+
+```
+cp genesis.json ~/.certikd/config
+```
+
+Start the full node. Note that it might take a while for the new full node to catch up on the chain history.
+
+```
+certikd start
+```
+
+To connect to the full node from CLI tool running on the same machine, use `tcp://localhost:26657`.
+
+### 
 
 ## Use CLI Tool to Access Testnet
 
@@ -60,7 +101,7 @@ certikcli config chain-id shentu
 certikcli config node tcp://<full node>:<port>
 ```
 
-During the closed alpha stage, full nodes for `certikcli` to connect can be obtained from the mailing list. Later in the closed alpha stage you will be allowed to run your own full nodes (or even validators) and connect `certikcli` to them.
+Use either full nodes from the mailing list or your own full nodes created as above.
 
 `certikcli` runs on Linux, Windows, and MacOS.
 
