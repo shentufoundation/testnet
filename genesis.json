@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2019-07-22T20:08:15.9943672Z",
+  "genesis_time": "2019-11-05T06:26:58.0497527Z",
   "chain_id": "shentu",
   "consensus_params": {
     "block": {
@@ -20,7 +20,7 @@
   "app_state": {
     "accounts": [
       {
-        "address": "certik1pwtacv38y4wvmt5jq6lurg4dyrq8rtp4km7rhx",
+        "address": "certik1qfzxjdrlexslt99r9pz0nsupe5c8yj82r6ueve",
         "coins": [
           {
             "denom": "uckg",
@@ -40,7 +40,7 @@
         "end_time": "0"
       },
       {
-        "address": "certik1uhstc3qfyjq0h3xs6ne7sl49tcva84jcq3tq69",
+        "address": "certik1f09cj0fdl3l3x8ylffydakqjpspkzzhe5zkp44",
         "coins": [
           {
             "denom": "uckg",
@@ -60,7 +60,7 @@
         "end_time": "0"
       },
       {
-        "address": "certik1s5y62ljr5m9helz9shv0xktft7pa8cgrk35uea",
+        "address": "certik1egpjxwfpfjq35wtf3hpvu64quj59v458hwameq",
         "coins": [
           {
             "denom": "uckg",
@@ -80,7 +80,7 @@
         "end_time": "0"
       },
       {
-        "address": "certik1sc02he0tljpq4t2jlsmnxnmftp44ah536ac9v4",
+        "address": "certik1pnvlylzx3ppqjqpreppa5nw6xhu9l99e7475lr",
         "coins": [
           {
             "denom": "uckg",
@@ -100,7 +100,7 @@
         "end_time": "0"
       },
       {
-        "address": "certik1znckpcuzx4qkw4f2x5qjrcsr7vlwjg75lcunn4",
+        "address": "certik1ljy6ja6mcpvk62fw47t2jh8ldrtpjyuf786c7q",
         "coins": [
           {
             "denom": "uckg",
@@ -120,7 +120,7 @@
         "end_time": "0"
       },
       {
-        "address": "certik1asagv02rhswskjq3xmw09t7k9ztfendjvdha4l",
+        "address": "certik1v74rnkulq3hny7f6laumq66y4t6jk00g2556pf",
         "coins": [
           {
             "denom": "uckg",
@@ -140,7 +140,7 @@
         "end_time": "0"
       },
       {
-        "address": "certik1e2fgtt8n49xlj39pwgdr7mkfam0z53efrryxng",
+        "address": "certik1hrzl3snht03wvp65qzzqzaz3l4nqzatkk3h69q",
         "coins": [
           {
             "denom": "uckg",
@@ -160,7 +160,7 @@
         "end_time": "0"
       },
       {
-        "address": "certik1pnpkuhjdn959aa5w0dt8zuh2k96a0a2pxklxvt",
+        "address": "certik1wxc9wav9ygphwka8reagwp6czs3qmr0j5ldcj6",
         "coins": [
           {
             "denom": "uckg",
@@ -180,7 +180,7 @@
         "end_time": "0"
       },
       {
-        "address": "certik1ynmnwcwemakxuppqe4a6y2wkmj7w7y9vxfpszv",
+        "address": "certik1am9mtz0p82qretrfsxzq346xnn6dpjjljvy7hz",
         "coins": [
           {
             "denom": "uckg",
@@ -200,7 +200,7 @@
         "end_time": "0"
       },
       {
-        "address": "certik1pseun6rvhlqmxvtme2ltfz5xs55ae4u3uyyr9z",
+        "address": "certik1d8xstwj2yeqn98uardd54lfd03ywale950alw7",
         "coins": [
           {
             "denom": "uckg",
@@ -301,9 +301,9 @@
                   "max_change_rate": "0.000000000000000000"
                 },
                 "min_self_delegation": "1",
-                "delegator_address": "certik1pwtacv38y4wvmt5jq6lurg4dyrq8rtp4km7rhx",
-                "validator_address": "certikvaloper1pwtacv38y4wvmt5jq6lurg4dyrq8rtp4p06r7u",
-                "pubkey": "certikvalconspub1zcjduepqe9vzut6sqxmfhkhhay8p30sg3057ax4arsgrhsw3z86uxdgrpu2sjykwdu",
+                "delegator_address": "certik1qfzxjdrlexslt99r9pz0nsupe5c8yj82r6ueve",
+                "validator_address": "certikvaloper1qfzxjdrlexslt99r9pz0nsupe5c8yj825wce9r",
+                "pubkey": "certikvalconspub1zcjduepqyq6y9w8fyg5y8sznnmfe4xsef3q46rm8gen9km9p8yhvvkyuvjyqknj78q",
                 "value": {
                   "denom": "uckt",
                   "amount": "1000000000"
@@ -319,12 +319,12 @@
             {
               "pub_key": {
                 "type": "tendermint/PubKeySecp256k1",
-                "value": "AnifxTnFb0M4pKTKFYJVL4tmnLGCGjSoJMXNVXSt1nhQ"
+                "value": "A5zp6EOonm6CmoJg5TFuTldrPW78Igkgc+SFbDAZFTCu"
               },
-              "signature": "vZie8cZ2pD7u5Nm0lohGUpkhvnT4V+ZaRY+AvQMPeeRkf6rkHmS/zJtOdCLpDGKo3KeW3sssCRSUKE4sEt+M8A=="
+              "signature": "NQRiE6CYjtFW6wX+3XkQQ0XVSCKgShk+yzsWoQkKwCEXVyL/IMOTF3ts4OLETkwfvTnctO9DuyYIdetTzYfZjQ=="
             }
           ],
-          "memo": "9fd3a5e19a04779f51ffc2d0c62737735a00f749@172.31.40.216:26656"
+          "memo": "b2dacf92b865358185760074a79c391e990fcdf2@172.31.40.216:26656"
         }
       },
       {
@@ -346,9 +346,9 @@
                   "max_change_rate": "0.000000000000000000"
                 },
                 "min_self_delegation": "1",
-                "delegator_address": "certik1uhstc3qfyjq0h3xs6ne7sl49tcva84jcq3tq69",
-                "validator_address": "certikvaloper1uhstc3qfyjq0h3xs6ne7sl49tcva84jch90qnl",
-                "pubkey": "certikvalconspub1zcjduepqvy0zw4alv2qsmg4d3w6zzw0a867l9qq2pj6qt5clh3l8c03w4ajqkl6k2x",
+                "delegator_address": "certik1f09cj0fdl3l3x8ylffydakqjpspkzzhe5zkp44",
+                "validator_address": "certikvaloper1f09cj0fdl3l3x8ylffydakqjpspkzzherkjpu0",
+                "pubkey": "certikvalconspub1zcjduepqex55y7l5af7x9j6rn6qtgtfxx7r8qj45sz8h7znck9rwjp97qnjq5lvtqx",
                 "value": {
                   "denom": "uckt",
                   "amount": "900000000"
@@ -364,12 +364,12 @@
             {
               "pub_key": {
                 "type": "tendermint/PubKeySecp256k1",
-                "value": "AgD6pf+sKqxxGrWHrvczyASXlql+CVL/sxx+dKBCq/2E"
+                "value": "A6qltIZJv6nyBvxn//sqfoLVOvJCoeCDJLVYyLI/QLyc"
               },
-              "signature": "lUQaGg4FGPhKYctoCQ+4KyQCQcg1BCT52zpn6aPY82BxP0PLhQrazmDufbf5Cny0c0rocXX1ZDJpnAuWQM+WmA=="
+              "signature": "5jTa0whOHLSugnWC4gyD72ud4fEIpg65RhxeLQQOjgw5b0YTrmz1lT3Spj1xY7Q3MAH0urmTPvA16s80qKsqgw=="
             }
           ],
-          "memo": "d527002f9e5dead7e3e90be9845f4683124c2121@172.31.34.189:26656"
+          "memo": "33c28cf47fb89725f6fa62998f40d1d92faf62b1@172.31.34.189:26656"
         }
       },
       {
@@ -391,9 +391,9 @@
                   "max_change_rate": "0.000000000000000000"
                 },
                 "min_self_delegation": "1",
-                "delegator_address": "certik1s5y62ljr5m9helz9shv0xktft7pa8cgrk35uea",
-                "validator_address": "certikvaloper1s5y62ljr5m9helz9shv0xktft7pa8cgrp9sus8",
-                "pubkey": "certikvalconspub1zcjduepqkycjxm4mkhksl2dqgr4pzmptl08aqc2ntv3gp887v5lhtzzmmjvqpge9fe",
+                "delegator_address": "certik1egpjxwfpfjq35wtf3hpvu64quj59v458hwameq",
+                "validator_address": "certikvaloper1egpjxwfpfjq35wtf3hpvu64quj59v458q6ems6",
+                "pubkey": "certikvalconspub1zcjduepqqv0hcvvkc95kazzzf8fzzyxs36p44zm0qwhnav733vxj053x2zdqgal6fz",
                 "value": {
                   "denom": "uckt",
                   "amount": "800000000"
@@ -409,12 +409,12 @@
             {
               "pub_key": {
                 "type": "tendermint/PubKeySecp256k1",
-                "value": "Ave9y/6oh1KyJjmQZIkLAQRKntDUJ1VdgjIP15z+bVh5"
+                "value": "AhJdjCC9uoPX/SpnzrnA33S1FXgu0t3Jd7wD3JSqeGSh"
               },
-              "signature": "X6GmtN9pv6WRW2LkOGrsmRJ2Fgu1YJBq//26VjfXtDVXCAuYUYzias0OmJzNkV4qos/iujgyYhsyyirxnvub6w=="
+              "signature": "Fi6MNBEn2RDIzE7VERVPc/VBP6APdjRGhNntqu2WgJQsJA7gXOSZ8zd23Xubu8q6CZcsOEAmZp5Fd4l2LfbFTw=="
             }
           ],
-          "memo": "6b1f6a25828ab34bc20ccdc3adb4dab40f8390f9@172.31.41.218:26656"
+          "memo": "32dd2330f77ff74d8a7514cb9ae55d0843031cfe@172.31.41.218:26656"
         }
       },
       {
@@ -436,9 +436,9 @@
                   "max_change_rate": "0.000000000000000000"
                 },
                 "min_self_delegation": "1",
-                "delegator_address": "certik1sc02he0tljpq4t2jlsmnxnmftp44ah536ac9v4",
-                "validator_address": "certikvaloper1sc02he0tljpq4t2jlsmnxnmftp44ah53dfu990",
-                "pubkey": "certikvalconspub1zcjduepqayevdqm469j9443tnuhg9rgpkdvc3xf0gwwq659ywh3yxfu60fysxq9jfg",
+                "delegator_address": "certik1pnvlylzx3ppqjqpreppa5nw6xhu9l99e7475lr",
+                "validator_address": "certikvaloper1pnvlylzx3ppqjqpreppa5nw6xhu9l99efp65ke",
+                "pubkey": "certikvalconspub1zcjduepqfgdn4xk78ujme5qewty6z4h6fr4hy7s4xnahxk3c05g9t8aa5q7qjd2k3v",
                 "value": {
                   "denom": "uckt",
                   "amount": "700000000"
@@ -454,12 +454,12 @@
             {
               "pub_key": {
                 "type": "tendermint/PubKeySecp256k1",
-                "value": "AmBK9O/mNPUk1qZpJpkTMuRRl8YC3XtkwRCpwMkKuMDj"
+                "value": "ArOcnIb8y55/sJuM71yG5EpR7CdGzJXvHc8jRS040aSa"
               },
-              "signature": "DzNUCIeD2Bip7MZswAAgV1rR7lbz9MbZVEUP2ZVSrVxsYN9HYhJDGlg3l22ykAJNykxZlx4nEHcSBbkSXj3p1g=="
+              "signature": "SODZ8ePPU04+MACt6M39kZwhwVEd6260kDb0msUFigUu+jY4vO0Tirn11uEo1DfFr1Z8NZqTE8reS1v1J0VN+Q=="
             }
           ],
-          "memo": "9db45ede98382b029084feeece2c61473b35f6fd@172.31.36.222:26656"
+          "memo": "0aaee5503a9c8ad972cead44754d0540fd5be0d8@172.31.36.222:26656"
         }
       },
       {
@@ -481,9 +481,9 @@
                   "max_change_rate": "0.000000000000000000"
                 },
                 "min_self_delegation": "1",
-                "delegator_address": "certik1znckpcuzx4qkw4f2x5qjrcsr7vlwjg75lcunn4",
-                "validator_address": "certikvaloper1znckpcuzx4qkw4f2x5qjrcsr7vlwjg75gvcn60",
-                "pubkey": "certikvalconspub1zcjduepqt9cx5w45ttw5y0mfw3rknmfef6s62923q370xuavctq9tp5mpd3qg0cj8g",
+                "delegator_address": "certik1ljy6ja6mcpvk62fw47t2jh8ldrtpjyuf786c7q",
+                "validator_address": "certikvaloper1ljy6ja6mcpvk62fw47t2jh8ldrtpjyuffn7ch6",
+                "pubkey": "certikvalconspub1zcjduepq8d2ujjd290qp7lnddud3u3wncte7u3sz6zajuxg3zvw09hw4nuls56h47m",
                 "value": {
                   "denom": "uckt",
                   "amount": "600000000"
@@ -499,12 +499,12 @@
             {
               "pub_key": {
                 "type": "tendermint/PubKeySecp256k1",
-                "value": "Ao0ktz/3v7l/gZaecOG4qCPHBfdPcVtSp15pyc4aZpLI"
+                "value": "AiRLLH0RrRE3xyvpERvUSrBvn3QEGn8XqQJFUIOA54JN"
               },
-              "signature": "d4Gzn2ldV/xfpVrQl4OXra9z36VlpsZxjE77bIRh/n0q8q4POFZN3eswjZAFlV2nrwE4KcdDXMnrLsAKvdXYug=="
+              "signature": "tDXVVHbKwBv2VbRxrjk/VvK2nYEytceuwtV3gqgwgjJUFIdOvGbPUA/n4aab6R/VZe73q8d0oWPcDExIszaAvQ=="
             }
           ],
-          "memo": "62b9b5a74873835a0f2b6e834531e3a4e5117fc8@172.31.33.110:26656"
+          "memo": "bed11aa7a5eb62a5637cd9385cd717102878fd38@172.31.33.110:26656"
         }
       },
       {
@@ -526,9 +526,9 @@
                   "max_change_rate": "0.000000000000000000"
                 },
                 "min_self_delegation": "1",
-                "delegator_address": "certik1asagv02rhswskjq3xmw09t7k9ztfendjvdha4l",
-                "validator_address": "certikvaloper1asagv02rhswskjq3xmw09t7k9ztfendjmenau9",
-                "pubkey": "certikvalconspub1zcjduepqd2nf4ckt3fpzeljx4uyy2vd8g0ekwtp82mdaydr7rwxlrwljjw7q68tftc",
+                "delegator_address": "certik1v74rnkulq3hny7f6laumq66y4t6jk00g2556pf",
+                "validator_address": "certikvaloper1v74rnkulq3hny7f6laumq66y4t6jk00gaqs6gn",
+                "pubkey": "certikvalconspub1zcjduepqlglggx6vuucx93zq69mx6s4vr5lte446pkf03qt5u43f9aarym2scthdjq",
                 "value": {
                   "denom": "uckt",
                   "amount": "500000000"
@@ -544,12 +544,12 @@
             {
               "pub_key": {
                 "type": "tendermint/PubKeySecp256k1",
-                "value": "AkcQbiY04yTZAPE/tCBPezLdQ8oot+SgDmfSeK94u1NX"
+                "value": "Arltgx/JpqO+fBb3+7Jsc/CH/Kf9e7crnP5520lnmSv6"
               },
-              "signature": "LS2MS6rcEQ1+7goCh/q9CaM6Ky75gnBM+zG6OypH8jNMDRpXZpOgVcCM2Of9CgbTKuV7wM1MpUHqic7mpyRnIA=="
+              "signature": "NNBdSndb+v5zYeyR7ODq9K+TiME85SUHph+ICy2rF7kWxxk42DthAUEvsGhugfr/wnIBTi1y5IOXu3sXTdgCfw=="
             }
           ],
-          "memo": "6af984e24ea283e0289da329809177106c33e38a@172.31.36.220:26656"
+          "memo": "127079bffacdb6503ddc8e9e718f7baee01bb053@172.31.36.220:26656"
         }
       },
       {
@@ -571,9 +571,9 @@
                   "max_change_rate": "0.000000000000000000"
                 },
                 "min_self_delegation": "1",
-                "delegator_address": "certik1e2fgtt8n49xlj39pwgdr7mkfam0z53efrryxng",
-                "validator_address": "certikvaloper1e2fgtt8n49xlj39pwgdr7mkfam0z53ef5hqx6j",
-                "pubkey": "certikvalconspub1zcjduepqkm2vrx07pkmkxxpyl0x0tq4dx4d320n93e55xugnel0rq7h3ve8sr8vx25",
+                "delegator_address": "certik1hrzl3snht03wvp65qzzqzaz3l4nqzatkk3h69q",
+                "validator_address": "certikvaloper1hrzl3snht03wvp65qzzqzaz3l4nqzatkp9n6v6",
+                "pubkey": "certikvalconspub1zcjduepq7gzfg9naakpq4gkaey4c2pf96z9yqd3knawvz0qged52eq5x6trss90kvz",
                 "value": {
                   "denom": "uckt",
                   "amount": "400000000"
@@ -589,12 +589,12 @@
             {
               "pub_key": {
                 "type": "tendermint/PubKeySecp256k1",
-                "value": "AklrOPK7/sxIleTpaBCZGYmS+ZqKalq5a/mEvjmnO6/I"
+                "value": "AngxJX7e8l6twd2D46AKy8fUGGZoM0SCYvceunBDZXoC"
               },
-              "signature": "SiZx03eDUUOni8OxMzmDEFFyLRsLKku7NB3ZTYJFvZE9rPZ4HwvxI3fiOboaju/RcdrplaJuaPhWqqPeFlAwXg=="
+              "signature": "2/rSVX4daetIUYywRKdnA/8ZEwhYJtMOUlS5y6JiwIRiHEq+Hik3tXlRS7+O4wDt1vOlnzXx30vWIdSrdD/Dpw=="
             }
           ],
-          "memo": "35d5bd54476340e1d6e6ecdaac0c43077109da0c@172.31.42.15:26656"
+          "memo": "d21397c9e61ab3fcca48c7f52d76054c6cae8341@172.31.42.15:26656"
         }
       },
       {
@@ -616,9 +616,9 @@
                   "max_change_rate": "0.000000000000000000"
                 },
                 "min_self_delegation": "1",
-                "delegator_address": "certik1pnpkuhjdn959aa5w0dt8zuh2k96a0a2pxklxvt",
-                "validator_address": "certikvaloper1pnpkuhjdn959aa5w0dt8zuh2k96a0a2p3zmx93",
-                "pubkey": "certikvalconspub1zcjduepqf9hwamz6jm6djat7ndtwwv936y8qcaak7lc6fsqgaq0srxfyfr6skt4vu5",
+                "delegator_address": "certik1wxc9wav9ygphwka8reagwp6czs3qmr0j5ldcj6",
+                "validator_address": "certikvaloper1wxc9wav9ygphwka8reagwp6czs3qmr0jrtfcmq",
+                "pubkey": "certikvalconspub1zcjduepqkxatzj6cfdtrus4hw4ce2dc6acvwqhj6whhghzd8vjs7unchr2dsjg40e7",
                 "value": {
                   "denom": "uckt",
                   "amount": "300000000"
@@ -634,12 +634,12 @@
             {
               "pub_key": {
                 "type": "tendermint/PubKeySecp256k1",
-                "value": "AhHGuHown62Z/4znUiOXhrLrXOdqiOJA2xjbV+xYVd85"
+                "value": "AyJ42cT0Lnsc1HkAnOVvuo+vIzFuWHJAuv8UJKW9BUos"
               },
-              "signature": "D8b20DBZQKkWrfWQF/5+7l/xngEfIhhc6LzXl3rPYd487VDccITBE8nY0eKHbpbUPJLcmXsudM2RG6P4cssYQg=="
+              "signature": "n8QP1zqJUky/anIXzDInigbIazfWQ60Jg6wnMyo9HeUkS+ILKg3hMjrIfWKkHuK54wSvb8lLjvMgU4tfyldFaA=="
             }
           ],
-          "memo": "16c8239303bf31af2ab6c47c182cb76d9509653b@172.31.40.116:26656"
+          "memo": "d6749527d9b0552afb58f8958211ce1f3973a886@172.31.40.116:26656"
         }
       },
       {
@@ -661,9 +661,9 @@
                   "max_change_rate": "0.000000000000000000"
                 },
                 "min_self_delegation": "1",
-                "delegator_address": "certik1ynmnwcwemakxuppqe4a6y2wkmj7w7y9vxfpszv",
-                "validator_address": "certikvaloper1ynmnwcwemakxuppqe4a6y2wkmj7w7y9v3a9stk",
-                "pubkey": "certikvalconspub1zcjduepqgk0kcc0n3khssn9rum5juwkl0ypdpn3xrr35e32awumsuxfutvyq9jyzms",
+                "delegator_address": "certik1am9mtz0p82qretrfsxzq346xnn6dpjjljvy7hz",
+                "validator_address": "certikvaloper1am9mtz0p82qretrfsxzq346xnn6dpjjl9cq77c",
+                "pubkey": "certikvalconspub1zcjduepqnvqhtyzlxr3nnjql7wmugznlman57gyy8sepn9xhrl7mk3zg7qzsuse0gp",
                 "value": {
                   "denom": "uckt",
                   "amount": "200000000"
@@ -679,12 +679,12 @@
             {
               "pub_key": {
                 "type": "tendermint/PubKeySecp256k1",
-                "value": "As9Avs7ufSGov182GhNjcQLOVCLN0HWHQKRbIoaT9wry"
+                "value": "A6UDROTHhm1mbM+kMffw5REVAFPShqYN3jNcXfxkkICq"
               },
-              "signature": "iJqnlCKkz8OTlbNz7fdJYJ/ylNUmMFh+Y7yFhNbB2htahvQMT2mwf0Hzq3eNsFeKsxz5ydazif+MFJv6BqPfWg=="
+              "signature": "LLtaLMFEb9oO2sgahTel80Cv++7sH+4oPolG18WIuJYK4QQPsIbrEJuso48UK2gB9rrHa79nLNDgcY4LLjyWQQ=="
             }
           ],
-          "memo": "c0fafdba2f04e8871e99ee1ba8d4d1c543a0df11@172.31.43.224:26656"
+          "memo": "9154957b5246d6c913cdd82dade7db8cf194623b@172.31.43.224:26656"
         }
       },
       {
@@ -706,9 +706,9 @@
                   "max_change_rate": "0.000000000000000000"
                 },
                 "min_self_delegation": "1",
-                "delegator_address": "certik1pseun6rvhlqmxvtme2ltfz5xs55ae4u3uyyr9z",
-                "validator_address": "certikvaloper1pseun6rvhlqmxvtme2ltfz5xs55ae4u3tsqrvc",
-                "pubkey": "certikvalconspub1zcjduepqvwfrcqfr292kfclyn94qnfeffzplnydgunascxn6zrs94gtcp66slxyjjp",
+                "delegator_address": "certik1d8xstwj2yeqn98uardd54lfd03ywale950alw7",
+                "validator_address": "certikvaloper1d8xstwj2yeqn98uardd54lfd03ywale9rmel8y",
+                "pubkey": "certikvalconspub1zcjduepq5k0qv8tw50tulvyedg3zyw92yx04nntrk6mfm0a7r70r9y7dfx6slp0ut3",
                 "value": {
                   "denom": "uckt",
                   "amount": "100000000"
@@ -724,12 +724,12 @@
             {
               "pub_key": {
                 "type": "tendermint/PubKeySecp256k1",
-                "value": "A5Kk+TrU/+O2CyFr0FT3SL7bwanT13vrRAZis2NU2B7k"
+                "value": "AiDh9yoJT6x0jSmq7cp7XRVAxGyYUOwSlKsbyXYc6K3f"
               },
-              "signature": "fyflD96iFGVGmmoEdWo5RQN4V/s3jGZongTr79y6hTYADTTpkuG61gbH5oKIq3N2Bpb8wj5d6Vpl123F0wesPA=="
+              "signature": "LJATDAq1i0W/WBbPd1dsIW9fGmNtlxJ4RwNX1YBtnQkRbKpnd/xdkBT/rjK9TtMnwLnjn+Y44JRrhs27F9o3hA=="
             }
           ],
-          "memo": "bf9667be3ee616d0b9a9e28cbcefdc1549910920@172.31.34.219:26656"
+          "memo": "ea7baf3d58b698c0d060c6c13a6832b0ecf7d509@172.31.34.219:26656"
         }
       }
     ]
