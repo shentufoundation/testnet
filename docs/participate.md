@@ -136,27 +136,23 @@ You can create multiple accounts for testing purpose.
 Please note that the testnet can be restarted often during the alpha testing stage, so you may need to re-create account / re-apply for test tokens on each testnet restart.
 
 
-## Convert a Full Node into Validator
+## Convert a Full Node into Validator (important)
 
-As `CertiK Chain` is designed with focus on ultimate blockchain security, one of the security requirements is that all validator nodes must be **certified** by either `CertiK` or other approved **certifiers**. The actual range of validator node ceritification is not fully defined during the closed alpha stage, but in general `CertiK Chain` validator nodes are expected to be powerful with good connectivity, use latest official chain node software releases, and eventually run on secure systems software such as `CertiKOS` (this is unavailable during closed alpha).
+As `CertiK Chain` is designed with focus on ultimate blockchain security, one of the security requirements is that all validator nodes must be **certified** by either `CertiK` or other approved **certifiers**. The actual range of validator node certification is not fully defined during the closed alpha stage, but in general `CertiK Chain` validator nodes are expected to be powerful with good connectivity, use latest official chain node software releases, and eventually run on secure systems software such as `CertiKOS` (this is unavailable during closed alpha).
 
-So the first step to convert the above full node into a validator is to get the node certified by `CertiK`, the only approved certifier at this moment. See the mailing list for instructions on how to get the certification.
+After creating the full node and completely loading chain history onto it, the current way to get it "certified" to be eligible to for validator purpose is the following.
 
-A validator node is assigned to a chain account, which should be created and charged with CKT and CKG tokens following the `Create Test Accounts` section below.
-
-A certified full node can then be used to create a validator via the `create-validator` transaction. Below is an example.
-
-```bash
-certikcli tx staking create-validator \
-  --amount=<STAKING_AMOUNT>uckt \
-  --pubkey=certikvalconspub1zcjduepqka5axa24zwdw3m7qdh2w6qud4p6xrl4ha76suz9rzqdy2mrcx5msnwnag5 \
-  --moniker=CTG-CAPITAL \
-  --commission-rate="0.10" \
-  --commission-max-rate="0.20" \
-  --commission-max-change-rate="0.01" \
-  --min-self-delegation="1" \
-  --gas="auto" \
-  --gas-adjustment=1.5 \
-  --fees=5000uckg \
-  --from=<STAKING_AMOUNT>
+First, run below commend on your node instance for obtaining the tendermint pubkey.
 ```
+certikd tendermint show-validator
+```
+
+Then send the pubkey to `chain@certik.org` with **title "request to certify validator node"** and optionally your reasoning on why this node should be approved to become a validator node (typically in terms of capacity, connectivity, maintenance, and security).
+
+Within 24 hours, CertiK will get back to you with either "certified" or "rejected" message.
+
+Once receiving the "certified" message, you can proceed to convert your full node to become a validator node following the instruction on https://certikfoundation.github.io.
+
+
+!!! warning "Notes"
+  It is important to note that the current certification process and requirement is likely very different from the future validator node certification. So being certified today does not guarantee the same node will be certified for future versions of testnet and mainnet.

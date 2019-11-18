@@ -251,8 +251,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#convert-a-full-node-into-validator-important" class="md-nav__link">
-    Convert a Full Node into Validator (important)
+  <a href="#convert-a-full-node-into-validator" class="md-nav__link">
+    Convert a Full Node into Validator
   </a>
   
 </li>
@@ -309,8 +309,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#convert-a-full-node-into-validator-important" class="md-nav__link">
-    Convert a Full Node into Validator (important)
+  <a href="#convert-a-full-node-into-validator" class="md-nav__link">
+    Convert a Full Node into Validator
   </a>
   
 </li>
@@ -446,19 +446,24 @@ It is the only way to recover your account if you ever forget your password.
 <p>Then, go to <a href="http://explorer.certik.foundation/faucet">http://explorer.certik.foundation/faucet</a>, submit your test account's address. The account will receive some amount of CKT and CKG tokens for testing purpose. Please do not abuse the faucet as there are only limited number of tokens available for testnet.</p>
 <p>You can create multiple accounts for testing purpose.</p>
 <p>Please note that the testnet can be restarted often during the alpha testing stage, so you may need to re-create account / re-apply for test tokens on each testnet restart.</p>
-<h2 id="convert-a-full-node-into-validator-important">Convert a Full Node into Validator (important)<a class="headerlink" href="#convert-a-full-node-into-validator-important" title="Permanent link">&para;</a></h2>
-<p>As <code>CertiK Chain</code> is designed with focus on ultimate blockchain security, one of the security requirements is that all validator nodes must be <strong>certified</strong> by either <code>CertiK</code> or other approved <strong>certifiers</strong>. The actual range of validator node certification is not fully defined during the closed alpha stage, but in general <code>CertiK Chain</code> validator nodes are expected to be powerful with good connectivity, use latest official chain node software releases, and eventually run on secure systems software such as <code>CertiKOS</code> (this is unavailable during closed alpha).</p>
-<p>After creating the full node and completely loading chain history onto it, the current way to get it "certified" to be eligible to for validator purpose is the following.</p>
-<p>First, run below commend on your node instance for obtaining the tendermint pubkey.
-<div class="codehilite"><pre><span></span>certikd tendermint show-validator
-</pre></div></p>
-<p>Then send the pubkey to <code>chain@certik.org</code> with <strong>title "request to certify validator node"</strong> and optionally your reasoning on why this node should be approved to become a validator node (typically in terms of capacity, connectivity, maintenance, and security).</p>
-<p>Within 24 hours, CertiK will get back to you with either "certified" or "rejected" message.</p>
-<p>Once receiving the "certified" message, you can proceed to convert your full node to become a validator node following the instruction on <a href="https://certikfoundation.github.io">https://certikfoundation.github.io</a>.</p>
-<div class="admonition warning">
-<p class="admonition-title">Notes</p>
-</div>
-<p>It is important to note that the current certification process and requirement is likely very different from the future validator node certification. So being certified today does not guarantee the same node will be certified for future versions of testnet and mainnet.</p>
+<h2 id="convert-a-full-node-into-validator">Convert a Full Node into Validator<a class="headerlink" href="#convert-a-full-node-into-validator" title="Permanent link">&para;</a></h2>
+<p>As <code>CertiK Chain</code> is designed with focus on ultimate blockchain security, one of the security requirements is that all validator nodes must be <strong>certified</strong> by either <code>CertiK</code> or other approved <strong>certifiers</strong>. The actual range of validator node ceritification is not fully defined during the closed alpha stage, but in general <code>CertiK Chain</code> validator nodes are expected to be powerful with good connectivity, use latest official chain node software releases, and eventually run on secure systems software such as <code>CertiKOS</code> (this is unavailable during closed alpha).</p>
+<p>So the first step to convert the above full node into a validator is to get the node certified by <code>CertiK</code>, the only approved certifier at this moment. See the mailing list for instructions on how to get the certification.</p>
+<p>A validator node is assigned to a chain account, which should be created and charged with CKT and CKG tokens following the <code>Create Test Accounts</code> section below.</p>
+<p>A certified full node can then be used to create a validator via the <code>create-validator</code> transaction. Below is an example.</p>
+<div class="codehilite"><pre><span></span>certikcli tx staking create-validator <span class="se">\</span>
+  --amount<span class="o">=</span>&lt;STAKING_AMOUNT&gt;uckt <span class="se">\</span>
+  --pubkey<span class="o">=</span>certikvalconspub1zcjduepqka5axa24zwdw3m7qdh2w6qud4p6xrl4ha76suz9rzqdy2mrcx5msnwnag5 <span class="se">\</span>
+  --moniker<span class="o">=</span>CTG-CAPITAL <span class="se">\</span>
+  --commission-rate<span class="o">=</span><span class="s2">&quot;0.10&quot;</span> <span class="se">\</span>
+  --commission-max-rate<span class="o">=</span><span class="s2">&quot;0.20&quot;</span> <span class="se">\</span>
+  --commission-max-change-rate<span class="o">=</span><span class="s2">&quot;0.01&quot;</span> <span class="se">\</span>
+  --min-self-delegation<span class="o">=</span><span class="s2">&quot;1&quot;</span> <span class="se">\</span>
+  --gas<span class="o">=</span><span class="s2">&quot;auto&quot;</span> <span class="se">\</span>
+  --gas-adjustment<span class="o">=</span><span class="m">1</span>.5 <span class="se">\</span>
+  --fees<span class="o">=</span>5000uckg <span class="se">\</span>
+  --from<span class="o">=</span>&lt;STAKING_AMOUNT&gt;
+</pre></div>
                 
                   
                 
