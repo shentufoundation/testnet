@@ -14,21 +14,20 @@ As testnet moves through its various stages, CertiK Foundation expects to provid
 
 * Closed Alpha 1.0 (July 22 2019)
 * Closed Alpha 2.0 (November 04 2019)
-* Open Beta 3.0 (To be announced)
+* Open Beta 3.0 (November 27 2019)
+* Open Beta 4.0 (To be announced)
 * ...
 * Full Testnet (To be announced)
 
-## Closed Alpha (**CURRENT STAGE**)
+## Closed Alpha (COMPLETED)
 
-The very first stage of testnet is the closed alpha stage, which is the current stage. At the begining of this stage, most chain features are either not fully tested, partially implemented, or even unimplemented. Hence for this stage we talk about "what (mostly) works" rather than "what does not work".
+The very first stage of testnet is the closed alpha stage. At the begining of this stage, most chain features are either not fully tested, partially implemented, or even unimplemented. Hence for this stage we talk about "what (mostly) works" rather than "what does not work".
 
 During this stage, testnet backend and frontend are expected to receive a lot of updates, often causing the chain to be re-deployed from scratch. The validator set size will be small (e.g., no more than 20).
 
-The closed alpha stage will last until most testnet features are implemented and alpha-tested.
+## Open Beta (**CURRENT STAGE**)
 
-## Open Beta
-
-The second stage of testnet is the open beta stage. It starts when the closed alpha stage exits with most testnet features implemented and alpha-tested. For this stage we switch to talk about "what is missing" instead of "what works".
+The second stage of testnet is the open beta stage, which is the current stage. It starts when the closed alpha stage exits with many testnet features implemented and alpha-tested. For this stage we switch to talk about "what is missing" instead of "what works".
 
 During this stage, testnet backend and frontend are expected to receive constant updates, occasionally causing the chain to be re-deployed from scratch. The validator set size will be medium (e.g., no more than 50).
 
@@ -42,81 +41,17 @@ During this stage, testnet backend and frontend are exepcted to receive on-deman
 
 # How to Participate
 
+`Certik Chain` is a project of the [CertiK Foundation](https://certik.foundation/).
+
 The [CertiK Chain Explorer](https://explorer.certik.foundation/) is public accessible and can be used to query on various status of the chain on the web.
 
-To do transactions on the chain, all alpha testers need to apply via the [CertiK Foundation website](https://certik.foundation/).
+The [Certik Chain User Group](https://groups.google.com/forum/#!forum/certik-chain-users) is a public forum for chain testing announcements and discussions.
+
+For non-public chain questions and discussions, please email to chain@certik.org
 
 Currently, chain transactions as well as chain account creation can only be performed via the CLI tool or CLI-based RESTful server. In the near future web wallet will be supported to allow using the chain without the CLI tool.
 
 The latest chain node binary and CLI tool binary can be downloaded from https://github.com/certikfoundation/chain/releases/.
-
-## Run A Full Node
-
-During the closed alpha stage, full node addresses for the CLI tool to connect to can be obtained from the mailing list. It is also possible to run your own full nodes and connect the CLI tool to them. In next section you will be shown how to convert your full nodes into validator nodes.
-
-With `certikd` one can run full nodes of the `CertiK Chain`. Its configuration needs to be properly initialized.
-
-```
-rm -rf ~/.certikd
-certikd init
-```
-
-You might want to customize your full node's name. Also, the full node needs to connect some existing nodes of the chain, which can be obtained from the mailing list. Open the node configuration file to edit them.
-
-```
-vi ~/.certikd/config/config.toml
-```
-
-Edit the following lines.
-
-```
-moniker = <node name>
-...
-persistent_peers = <persistent node address>
-```
-
-Then copy the testnet genesis JSON file to the node configuration directory.
-
-```
-cp genesis.json ~/.certikd/config
-```
-
-Start the full node. Note that it might take a while for the new full node to catch up on the chain history.
-
-```
-certikd start
-```
-
-To connect to the full node from CLI tool running on the same machine, use `tcp://localhost:26657`.
-
-## Convert a Full Node into Validator
-
-As `CertiK Chain` is designed with focus on ultimate blockchain security, one of the security requirements is that all validator nodes must be **certified** by either `CertiK` or other approved **certifiers**. The actual range of validator node ceritification is not fully defined during the closed alpha stage, but in general `CertiK Chain` validator nodes are expected to be powerful with good connectivity, use latest official chain node software releases, and eventually run on secure systems software such as `CertiKOS` (this is unavailable during closed alpha).
-
-So the first step to convert the above full node into a validator is to get the node certified by `CertiK`, the only approved certifier at this moment. See the mailing list for instructions on how to get the certification.
-
-A validator node is assigned to a chain account, which should be created and charged with CKT and CKG tokens following the `Create Test Accounts` section below.
-
-A certified full node can then be used to create a validator via the `create-validator` transaction. Below is an example.
-
-```
-certikcli tx staking create-validator \
-  --amount=<amount of uckt to delegate to the validator>uckt \
-  --pubkey=$(certikd tendermint show-validator) \
-  --moniker=<name of the validator, which can be diffferent from account name> \
-  --commission-rate="0.10" \
-  --commission-max-rate="0.20" \
-  --commission-max-change-rate="0.01" \
-  --min-self-delegation="1" \
-  --gas="auto" \
-  --gas-adjustment=1.5 \
-  --fees=5000uckg \
-  --from=<validator chain account name>
-```
-
-If the transaction is successful, your validator should appear in either the `Active` or `Inactive` tabs on the [chain explorer's validators page](https://explorer.certik.foundation/validators).
-
-### 
 
 ## Use CLI Tool to Access Testnet
 
@@ -130,7 +65,12 @@ certikcli config chain-id shentu
 certikcli config node tcp://<full node>:<port>
 ```
 
-Use either full nodes from the mailing list or your own full nodes created as above.
+Use either the following full nodes or your own full nodes created as below.
+
+```
+tcp://54.147.168.255:26657
+tcp://34.224.56.249:26657
+```
 
 `certikcli` runs on Linux, Windows, and MacOS.
 
@@ -159,7 +99,92 @@ Then, go to http://explorer.certik.foundation/faucet, submit your test account's
 
 You can create multiple accounts for testing purpose.
 
-Please note that the testnet can be restarted often during the alpha testing stage, so you may need to re-create account / re-apply for test tokens on each testnet restart.
+Please note that the testnet can be restarted occasionally during the beta testing stage, so you may need to re-create account / re-apply for test tokens on each testnet restart.
+
+## Run A Full Node
+
+It is possible to run your own full nodes and connect the CLI tool to them. In the next section you will be shown how to convert your full nodes into validator nodes.
+
+With `certikd` one can run full nodes of the `CertiK Chain`. Its configuration needs to be properly initialized.
+
+```
+rm -rf ~/.certikd
+certikd init
+```
+
+You might want to customize your full node's name. Also, the full node needs to connect some existing nodes of the chain, which can be obtained from the mailing list. Open the node configuration file to edit them.
+
+```
+vi ~/.certikd/config/config.toml
+```
+
+Edit the following lines.
+
+```
+moniker = <node name>
+...
+persistent_peers = <persistent node address>
+```
+
+Below are the available persistent nodes.
+
+```
+09dbccc66b866628bf889ed16b50a55752bafcbf@54.147.168.255:26656
+2b875992f6c141d69ce5e693b1b9a94e9def6642@34.224.56.249:26656
+```
+
+Then copy the testnet genesis JSON file to the node configuration directory.
+
+```
+cp genesis.json ~/.certikd/config
+```
+
+Start the full node. Note that it might take a while for the new full node to catch up on the chain history.
+
+```
+certikd start
+```
+
+To connect to the full node from CLI tool running on the same machine, use `tcp://localhost:26657`.
+
+## Convert a Full Node into Validator
+
+As `CertiK Chain` is designed with focus on ultimate blockchain security, one of the security requirements is that all validator nodes must be **certified** by either `CertiK` or other approved **certifiers**. The actual range of validator node ceritification is not fully defined during the open beta stage, but in general `CertiK Chain` validator nodes are expected to be powerful with good connectivity, use latest official chain node software releases, and eventually run on secure systems software such as `CertiKOS` (this is unavailable during closed alpha).
+
+A validator node is assigned to a chain account, which should be created and charged with CKT and CKG tokens following the `Create Test Accounts` section above.
+
+Before converting the above full node into a validator, it is required to get the node certified by `CertiK`, the only approved certifier at this moment. The is done by the following steps.
+
+First, run the following on on your node instance.
+
+```
+certikd tendermint show-validator
+```
+
+Then send the pubkey to chain@certik.org with title "request to certify validator node" and optionally your reasoning on why this node should be approved to become a validator node (typically in terms of capacity, connectivity, maintenance, and security).
+
+Within 24 hours, CertiK will get back to you with either "certified" or "rejected" message.
+
+Once receiving the "certified" message, you can proceed to convert your full node to become a validator node by following the instruction below.
+
+```
+certikcli tx staking create-validator \
+  --amount=<amount of uckt to delegate to the validator>uckt \
+  --pubkey=$(certikd tendermint show-validator) \
+  --moniker=<name of the validator, which can be diffferent from account name> \
+  --commission-rate="0.10" \
+  --commission-max-rate="0.20" \
+  --commission-max-change-rate="0.01" \
+  --min-self-delegation="1" \
+  --gas="auto" \
+  --gas-adjustment=1.5 \
+  --fees=5000uckg \
+  --from=<validator chain account name>
+```
+
+If the transaction is successful, your validator should appear in either the `Active` or `Inactive` tabs on the [chain explorer's validators page](https://explorer.certik.foundation/validators).
+
+### 
 
 ### Queries
 
