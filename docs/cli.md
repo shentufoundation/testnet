@@ -1,5 +1,3 @@
-## CertiK Chain CLI
+- For running CertiK Chain node, please see "[`certikd`](cli/certikd/certikd.md)".
 
-- For Running CertiK Chain Node: [`certikd`](cli/certikd/certikd.md)
-
-- For Running CertiK Chain Client: [`certikcli`](cli/certikcli/certikcli.md)
+- For using CertiK Chain client, please see "[`certikcli`](cli/certikcli/certikcli.md)".
