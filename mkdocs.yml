@@ -47,3 +47,4 @@ nav:
   - Command-Line Interfaces:
       - certikd (Server): cli/certikd/certikd.md
       - certikcli (Client): cli/certikcli/certikcli.md
+  - RESTful API Endpoints: "https://api.certik.foundation/chain"
