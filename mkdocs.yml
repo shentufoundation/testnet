@@ -44,4 +44,6 @@ nav:
   - What is CertiK Chain: index.md
   - Installation: installation.md
   - Join the Testnet: participate.md
-  - Command-Line Interface: cli.md
+  - Command-Line Interfaces:
+      - certikd (Server): cli/certikd/certikd.md
+      - certikcli (Client): cli/certikcli/certikcli.md
