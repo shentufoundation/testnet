@@ -42,6 +42,7 @@ markdown_extensions:
   - pymdownx.tilde
 nav:
   - What is CertiK Chain: index.md
+  - What's New?: news.md
   - Installation: installation.md
   - Join the Testnet: participate.md
   - Command-Line Interfaces:

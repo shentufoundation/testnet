@@ -81,7 +81,7 @@ go env
 
 The latest chain node binary and CLI tool binary can be downloaded from:
 
-- [v0.4-alpha Latest-Release](https://github.com/certikfoundation/chain/releases/)
+- [v0.5-beta Latest-Release](https://github.com/certikfoundation/chain/releases/)
 
 !!! warning "Notes"
     `certikd`: The daemon for running a full-node of the certik application.
