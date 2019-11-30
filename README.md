@@ -68,8 +68,8 @@ certikcli config node tcp://<full node>:<port>
 Use either the following full nodes or your own full nodes created as below.
 
 ```
+tcp://3.95.195.221:26657
 tcp://54.147.168.255:26657
-tcp://34.224.56.249:26657
 ```
 
 `certikcli` runs on Linux, Windows, and MacOS.
@@ -129,8 +129,8 @@ persistent_peers = <persistent node address>
 Below are the available persistent nodes.
 
 ```
+3742fc9614a7400536683b5fdc6d80783ec54ba2@3.95.195.221:26656
 09dbccc66b866628bf889ed16b50a55752bafcbf@54.147.168.255:26656
-2b875992f6c141d69ce5e693b1b9a94e9def6642@34.224.56.249:26656
 ```
 
 Then copy the testnet genesis JSON file to the node configuration directory.
