@@ -34,8 +34,8 @@ As testnet moves through its various stages, CertiK Foundation expects to provid
 | Stage  | Expected Timeframe |       |
 | ------ | ------------------ | ----- |
 | Closed Alpha 1.0 | July 22 2019 | 🚀 |
-| Closed Alpha 2.0 | November 04 2019 | 🚀 ☕ [**CURRENT STAGE**]|
-| Open Beta 3.0    | TBA | ⌛ |
+| Closed Alpha 2.0 | November 04 2019 | 🚀 |
+| Open Beta 3.0    | November 27 2019 | 🚀 ☕ [**CURRENT STAGE**] |
 | ...              | TBA | ⌛ |
 | Full Testnet     | TBA | ⌛ |
 

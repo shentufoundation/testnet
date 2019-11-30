@@ -6,7 +6,7 @@ theme:
   palette:
     primary: "amber"
     accent: "amber"
-  logo: "img/favicon.ico"
+  logo: "img/certik-foundation.png"
   favicon: "img/favicon.ico"
 extra:
   social:
