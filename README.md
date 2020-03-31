@@ -12,12 +12,12 @@ As testnet moves through its various stages, CertiK Foundation expects to provid
 
 ## Timeline
 
-* Closed Alpha 1.0 (July 22 2019)
-* Closed Alpha 2.0 (November 04 2019)
-* Open Beta 3.0 (November 27 2019)
-* Open Beta 4.0 (To be announced)
+* Closed Alpha 1.0 (July 22, 2019)
+* Closed Alpha 2.0 (November 04, 2019)
+* Open Beta 3.0 (November 27, 2019)
+* Full Testnet 4.0 (March 31, 2020)
 * ...
-* Full Testnet (To be announced)
+* Mainnet
 
 ## Closed Alpha (COMPLETED)
 
@@ -25,17 +25,17 @@ The very first stage of testnet is the closed alpha stage. At the begining of th
 
 During this stage, testnet backend and frontend are expected to receive a lot of updates, often causing the chain to be re-deployed from scratch. The validator set size will be small (e.g., no more than 20).
 
-## Open Beta (**CURRENT STAGE**)
+## Open Beta (COMPLETED)
 
-The second stage of testnet is the open beta stage, which is the current stage. It starts when the closed alpha stage exits with many testnet features implemented and alpha-tested. For this stage we switch to talk about "what is missing" instead of "what works".
+The second stage of testnet is the open beta stage. It starts when the closed alpha stage exits with many testnet features implemented and alpha-tested. For this stage we switch to talk about "what is missing" instead of "what works".
 
 During this stage, testnet backend and frontend are expected to receive constant updates, occasionally causing the chain to be re-deployed from scratch. The validator set size will be medium (e.g., no more than 50).
 
 The open beta stage will last until all testnet features are implemented and properly tested.
 
-## Full Testnet
+## Full Testnet (**CURRENT STAGE**)
 
-The final full stage of testnet starts when the open beta stage exits with all testnet features properly tested.
+The final full stage of testnet starts when the open beta stage exits with all testnet features properly tested, which is the current stage.
 
 During this stage, testnet backend and frontend are exepcted to receive on-demand updates. Branching instead of re-deployment will be preferred when solving chain divergence. The validator set size will be large (e.g., no more than 100).
 
@@ -45,11 +45,13 @@ During this stage, testnet backend and frontend are exepcted to receive on-deman
 
 The [CertiK Chain Explorer](https://explorer.certik.foundation/) is public accessible and can be used to query on various status of the chain on the web.
 
-The [Certik Chain User Group](https://groups.google.com/forum/#!forum/certik-chain-users) is a public forum for chain testing announcements and discussions.
+The [DeepWallet](https://wallet.certik.foundation/) is public accessible and can be used to manage chain accounts, including CTK storage, staking, transfer, and voting, as well as smart contracts deploy and invocation.
+
+The [Certik Chain User Forum](https://forum.certik.foundation/categories) is a public forum for chain announcements and discussions.
 
 For non-public chain questions and discussions, please email to chain@certik.org
 
-Currently, chain transactions as well as chain account creation can only be performed via the CLI tool or CLI-based RESTful server. In the near future web wallet will be supported to allow using the chain without the CLI tool.
+Chain transactions as well as chain account creation can also be performed via the CLI tool or CLI-based RESTful servers.
 
 The latest chain node binary and CLI tool binary can be downloaded from https://github.com/certikfoundation/chain/releases/.
 
@@ -63,6 +65,7 @@ With `certikcli` one can create test account key pairs and interact with the tes
 rm -rf ~/.certikcli
 certikcli config chain-id shentu
 certikcli config node tcp://<full node>:<port>
+certikcli config trust-node true
 ```
 
 Use either the following full nodes or your own full nodes created as below.
@@ -95,11 +98,11 @@ It is the only way to recover your account if you ever forget your password.
 ...
 ```
 
-Then, go to http://explorer.certik.foundation/faucet, submit your test account's address. The account will receive some amount of CKT and CKG tokens for testing purpose. Please do not abuse the faucet as there are only limited number of tokens available for testnet.
+Then, go to http://explorer.certik.foundation/faucet, submit your test account's address. The account will receive some amount of CTK for testing purpose. Please do not abuse the faucet as there are only limited number of tokens available for testnet.
 
 You can create multiple accounts for testing purpose.
 
-Please note that the testnet can be restarted occasionally during the beta testing stage, so you may need to re-create account / re-apply for test tokens on each testnet restart.
+Please note that the testnet may be restarted occasionally, so you may need to re-create account / re-apply for test tokens on each testnet restart.
 
 ## Run A Full Node
 
@@ -109,10 +112,10 @@ With `certikd` one can run full nodes of the `CertiK Chain`. Its configuration n
 
 ```
 rm -rf ~/.certikd
-certikd init
+certikd init <node name>
 ```
 
-You might want to customize your full node's name. Also, the full node needs to connect some existing nodes of the chain, which can be obtained from the mailing list. Open the node configuration file to edit them.
+The full node needs to connect some existing nodes of the chain, which can be obtained from the mailing list. Open the node configuration file to edit them.
 
 ```
 vi ~/.certikd/config/config.toml
@@ -121,16 +124,16 @@ vi ~/.certikd/config/config.toml
 Edit the following lines.
 
 ```
-moniker = <node name>
 ...
 persistent_peers = <persistent node address>
+...
 ```
 
 Below are the available persistent nodes.
 
 ```
-3742fc9614a7400536683b5fdc6d80783ec54ba2@3.95.195.221:26656
-09dbccc66b866628bf889ed16b50a55752bafcbf@54.147.168.255:26656
+1c5550c131c1d1ec747e8ecb5b932c7cf306115d@3.95.195.221:26656
+de4c2266a6a6255585f8783b043baa7344d15abb@54.147.168.255:26656
 ```
 
 Then copy the testnet genesis JSON file to the node configuration directory.
@@ -149,9 +152,9 @@ To connect to the full node from CLI tool running on the same machine, use `tcp:
 
 ## Convert a Full Node into Validator
 
-As `CertiK Chain` is designed with focus on ultimate blockchain security, one of the security requirements is that all validator nodes must be **certified** by either `CertiK` or other approved **certifiers**. The actual range of validator node ceritification is not fully defined during the open beta stage, but in general `CertiK Chain` validator nodes are expected to be powerful with good connectivity, use latest official chain node software releases, and eventually run on secure systems software such as `CertiKOS` (this is unavailable during closed alpha).
+As `CertiK Chain` is designed with focus on ultimate blockchain security, one of the security requirements is that all validator nodes must be **certified** by either `CertiK` or other approved **certifiers**. The actual range of validator node ceritification is not fully defined for testnet, but in general `CertiK Chain` validator nodes are expected to be powerful with good connectivity, use latest official chain node software releases, and eventually run on secure systems software such as `CertiKOS` (this is unavailable during closed alpha).
 
-A validator node is assigned to a chain account, which should be created and charged with CKT and CKG tokens following the `Create Test Accounts` section above.
+A validator node is assigned to a chain account, which should be created and charged with CTK following the `Create Test Accounts` section above.
 
 Before converting the above full node into a validator, it is required to get the node certified by `CertiK`, the only approved certifier at this moment. The is done by the following steps.
 
@@ -169,7 +172,7 @@ Once receiving the "certified" message, you can proceed to convert your full nod
 
 ```
 certikcli tx staking create-validator \
-  --amount=<amount of uckt to delegate to the validator>uckt \
+  --amount=<amount of uctk to delegate to the validator>uctk \
   --pubkey=$(certikd tendermint show-validator) \
   --moniker=<name of the validator, which can be diffferent from account name> \
   --commission-rate="0.10" \
@@ -178,7 +181,7 @@ certikcli tx staking create-validator \
   --min-self-delegation="1" \
   --gas="auto" \
   --gas-adjustment=1.5 \
-  --fees=5000uckg \
+  --fees=5000uctk \
   --from=<validator chain account name>
 ```
 
@@ -214,32 +217,14 @@ To query the status of an account
 certikcli query account <address>
 ```
 
-To query the CKT balance of an account
-
-```
-certikcli query ckt balance <address>
-```
-
-To query the CKG balance of an account
-
-```
-certikcli query ckg balance <address>
-```
-
 ### Transactions
 
 `certikcli` also supports many transaction subcommands. Below are some common examples. More details can be found in the command help printout.
 
-To transfer CKT from one account to another.
+To transfer CTK from one account to another.
 
 ```
-certikcli tx ckt transfer <amount of uckt> <recipent address> --from <sender_address> --fees 5000uckg
-```
-
-To transfer CKG from one account to another.
-
-```
-certikcli tx ckg transfer <amount of uckg> <recipent address> --from <sender_address> --fees 5000uckg
+certikcli tx send <sender address> <recipent address> <amount of uctk> --fees 5000uctk
 ```
 
 ### CVM Smart Contracts
@@ -266,24 +251,18 @@ contract SimpleStorage {
     }
 }
 
-$ certikcli tx cvm deploy 1000000 simple.sol --from <deployer address> --fees 5000uckg
-Response:
-  TxHash: <transaction hash>
+$ certikcli  tx cvm deploy simple.sol --from <deployer address> --fees 5000uctk
+...
+txhash: <transaction hash>
+...
 ```
 To get the deployed contract address
 
 ```
-$ certikcli query tx
-Response:
-  Height: ...
-  TxHash: <transaction hash>
-  Data: ...
-  Raw Log: [{"msg_index":"0","success":true,"log":"<contract address>"}]
-  Logs: [{"msg_index":0,"success":true,"log":"<contract address>"}]
-  GasWanted: ...
-  GasUsed: ...
-  Tags:
-    - action = deploy
+$ certikcli query tx <transaction hash>
+...
+    - key: new-contract-address
+      value: <deployed contract address>
 ...
 ```
 
@@ -301,39 +280,26 @@ certikcli query cvm code <contract address>
 To call SimpleStorage.set(123)
 
 ```
-certikcli tx cvm call <contract address> 1000000 set 123 --from <caller address> --fees 5000uckg
+certikcli tx cvm call <contract address> set 123 --from <caller address> --fees 5000uctk
 ```
 
 To call SimpleStorage.get()
 
 ```
-$ certikcli tx cvm call <contract address> 1000000 get --from <caller address> --fees 5000uckg
-Response:
-  TxHash: <transaction hash>
+$ certikcli tx cvm call <contract address> get --from <caller address> --fees 5000uctk
+...
+txhash: <transaction hash>
+...
 ```
 
 To verify the read out data is indeed 123 (0x7b)
 
 ```
 certikcli query tx <transaction hash>
-Response:
-  Height: ...
-  TxHash: <transaction hash>
-  Data: 000000000000000000000000000000000000000000000000000000000000007B
-  Raw Log: [{"msg_index":"0","success":true,"log":""}]
-  Logs: [{"msg_index":0,"success":true,"log":""}]
-  GasWanted: ...
-  GasUsed: ...
-  Tags:
-    - action = call
+...
+data: 000000000000000000000000000000000000000000000000000000000000007B
+...
 ```
-
-Currently, CVM has the following known limitations.
-
-* No `CertiK Chain` specific features have been enabled.
-* Smart contract execution gas model has not been implemented.
-* Event has not been implemented.
-* Only a single smart contract from a single Solidity file can be deployed at a time from CLI. (Compiled smart contract from multiple files can be deployed via RESTful endpoints in the near future).
 
 ## Use RESTful Endpoints to Access Testnet
 
@@ -352,18 +318,41 @@ curl -s http://localhost:1317/staking/validators
 Here are some query endpoints.
 
 ```
+/auth/accounts/{address}
+/bank/balances/{address}
 /blocks/latest
 /blocks/{height}
-/ckg/balance/{address}
-/ckg/issuance/{adress}
-/ckt/balance/{address}
-/ckt/issuance/{adress}
 /cvm/abi/{address}
 /cvm/code/{address}
 /cvm/storage/{address}/{key}
+/distribution/community_pool
+/distribution/delegators/{delegatorAddr}/rewards
+/distribution/delegators/{delegatorAddr}/rewards/{validatorAddr}
+/distribution/delegators/{delegatorAddr}/withdraw_address
+/distribution/parameters
+/distribution/validators/{validatorAddr}
+/distribution/validators/{validatorAddr}/outstanding_rewards
+/distribution/validators/{validatorAddr}/rewards
 /node_info
 /node_version
+/slashing/parameters
+/slashing/signing_infos/page={page}&limit={limit}
+/slashing/validators/{validatorPubKey}/signing_info
+/staking/delegators/{delegatorAddr}/delegations
+/staking/delegators/{delegatorAddr}/delegations/{validatorAddr}
+/staking/delegators/{delegatorAddr}/txs
+/staking/delegators/{delegatorAddr}/unbonding_delegations
+/staking/delegators/{delegatorAddr}/unbonding_delegations/{validatorAddr}
+/staking/delegators/{delegatorAddr}/validators
+/staking/delegators/{delegatorAddr}/validators/{validatorAddr}
+/staking/parameters
+/staking/pool
+/staking/redelegations
 /staking/validators
+/staking/validators/{validatorAddr}
+/staking/validators/{validatorAddr}/delegations
+/staking/validators/{validatorAddr}/unbonding_delegations
+/syncing
 /txs
 /txs/{hash}
 /validatorsets/latest
