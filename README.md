@@ -181,7 +181,7 @@ certikcli tx staking create-validator \
   --min-self-delegation="1" \
   --gas="auto" \
   --gas-adjustment=1.5 \
-  --fees=5000uctk \
+  --fees=6000uctk \
   --from=<validator chain account name>
 ```
 
