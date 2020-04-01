@@ -53,7 +53,9 @@ For non-public chain questions and discussions, please email to chain@certik.org
 
 Chain transactions as well as chain account creation can also be performed via the CLI tool or CLI-based RESTful servers.
 
-The latest chain node binary and CLI tool binary can be downloaded from https://github.com/certikfoundation/chain/releases/.
+## Latest Release Download
+
+The latest chain node binary and CLI tool binary, as well as genesis and sample smart contract files, can be downloaded from https://github.com/certikfoundation/chain/releases/.
 
 ## Use CLI Tool to Access Testnet
 
@@ -136,7 +138,7 @@ Below are the available persistent nodes.
 de4c2266a6a6255585f8783b043baa7344d15abb@54.147.168.255:26656
 ```
 
-Then copy the testnet genesis JSON file to the node configuration directory.
+Then copy the testnet genesis JSON file to the node configuration directory. The latest genesis file can be found [here](https://github.com/certikfoundation/chain/blob/master/genesis.json). Release-specific genesis file can be found in the [release download](https://github.com/certikfoundation/chain/releases/).
 
 ```
 cp genesis.json ~/.certikd/config
