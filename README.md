@@ -1,4 +1,4 @@
-[Create Test Account](#create-test-accounts)
+[Create Test Account](#create-test-accounts) [Download Latest Release](https://github.com/certikfoundation/chain/releases/)
 
 # CertiK Chain Testnet
 
