@@ -229,6 +229,12 @@ To transfer CTK from one account to another.
 certikcli tx send <sender address> <recipent address> <amount of uctk> --fees 5000uctk
 ```
 
+For validators, you can unjail yourself by making an unjail transaction if you are jailed.
+
+```
+certikcli tx slashing unjail --from <validator operator name> --fees=5000uctk
+```
+
 ### CVM Smart Contracts
 
 `CertiK VM`, or CVM, is a core component of the `CertiK Chain`. CVM is compatible with EVM with security-focused extensions. Smart Contracts written in Solidity can be deployed and invoked on the CertiK Chain.
