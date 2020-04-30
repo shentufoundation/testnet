@@ -63,11 +63,11 @@ The latest chain node binary and CLI tool binary, as well as genesis and sample 
 
 With `certikcli` one can create test account key pairs and interact with the testnet. Its configuration needs to be properly set as the following.
 
-```
-rm -rf ~/.certikcli
-certikcli config chain-id shentu
-certikcli config node tcp://<full node>:<port>
-certikcli config trust-node true
+```bash
+$ rm -rf ~/.certikcli
+$ certikcli config chain-id shentu
+$ certikcli config node tcp://<full node>:<port>
+$ certikcli config trust-node true
 ```
 
 Use either the following full nodes or your own full nodes created as below.
@@ -87,7 +87,7 @@ To use the `CertiK Chain` and do transactions on the chain, one need to first cr
 
 First, create an account address and public / private key pair on your computer. In interactions with the chain, public address and key are used frequently. The private key is stored in your local computer and is needed to sign your transaction before submitting.
 
-```
+```bash
 $ certikcli keys add <account name>
 Enter a passphrase to encrypt your key to disk:
 Repeat the passphrase:
@@ -112,15 +112,15 @@ It is possible to run your own full nodes and connect the CLI tool to them. In t
 
 With `certikd` one can run full nodes of the `CertiK Chain`. Its configuration needs to be properly initialized.
 
-```
-rm -rf ~/.certikd
-certikd init <node name>
+```bash
+$ rm -rf ~/.certikd
+$ certikd init <node name>
 ```
 
 The full node needs to connect some existing nodes of the chain, which can be obtained from the mailing list. Open the node configuration file to edit them.
 
-```
-vi ~/.certikd/config/config.toml
+```bash
+$ vi ~/.certikd/config/config.toml
 ```
 
 Edit the following lines.
@@ -140,14 +140,14 @@ de4c2266a6a6255585f8783b043baa7344d15abb@54.147.168.255:26656
 
 Then copy the testnet genesis JSON file to the node configuration directory. The latest genesis file can be found [here](https://github.com/certikfoundation/chain/blob/master/genesis.json). Release-specific genesis file can be found in the [release download](https://github.com/certikfoundation/chain/releases/).
 
-```
-cp genesis.json ~/.certikd/config
+```bash
+$ cp genesis.json ~/.certikd/config
 ```
 
 Start the full node. Note that it might take a while for the new full node to catch up on the chain history.
 
-```
-certikd start
+```bash
+$ certikd start
 ```
 
 To connect to the full node from CLI tool running on the same machine, use `tcp://localhost:26657`.
@@ -162,8 +162,8 @@ Before converting the above full node into a validator, it is required to get th
 
 First, run the following on on your node instance.
 
-```
-certikd tendermint show-validator
+```bash
+$ certikd tendermint show-validator
 ```
 
 Then send the pubkey to chain@certik.org with title "request to certify validator node" and optionally your reasoning on why this node should be approved to become a validator node (typically in terms of capacity, connectivity, maintenance, and security).
@@ -172,8 +172,8 @@ Within 24 hours, CertiK will get back to you with either "certified" or "rejecte
 
 Once receiving the "certified" message, you can proceed to convert your full node to become a validator node by following the instruction below.
 
-```
-certikcli tx staking create-validator \
+```bash
+$ certikcli tx staking create-validator \
   --amount=<amount of uctk to delegate to the validator>uctk \
   --pubkey=$(certikd tendermint show-validator) \
   --moniker=<name of the validator, which can be diffferent from account name> \
@@ -197,26 +197,26 @@ If the transaction is successful, your validator should appear in either the `Ac
 
 To query the current validator set
 
-```
-certikcli query staking validators
+```bash
+$ certikcli query staking validators
 ```
 
 To query a block
 
-```
-certikcli query block <height>
+```bash
+$ certikcli query block <height>
 ```
 
 To query a transaction
 
-```
-certikcli query tx <transaction hash>
+```bash
+$ certikcli query tx <transaction hash>
 ```
 
 To query the status of an account
 
-```
-certikcli query account <address>
+```bash
+$ certikcli query account <address>
 ```
 
 ### Transactions
@@ -225,15 +225,45 @@ certikcli query account <address>
 
 To transfer CTK from one account to another.
 
-```
-certikcli tx send <sender address> <recipent address> <amount of uctk> --fees 5000uctk
+```bash
+$ certikcli tx send <sender address> <recipent address> <amount of uctk> --fees 5000uctk
 ```
 
 For validators, you can unjail yourself by making an unjail transaction if you are jailed.
 
+```bash
+$ certikcli tx slashing unjail --from <validator operator name> --fees=5000uctk
 ```
-certikcli tx slashing unjail --from <validator operator name> --fees=5000uctk
+
+### Staking
+
+`certikcli` supports delegations. Delegators can get rewards without running a full validator node.
+
+To find all validators
+
+```bash
+$ certikcli query staking validators
 ```
+
+To submit a delegation to one of the validators
+
+```bash
+$ certikcli tx staking delegate <validator address> 1000000uctk --from <delegator name>  --fees 5000uctk
+```
+
+To submit a redelegation from one validator to another validator
+
+```bash
+$ certikcli tx staking redelegate <from validator address> <to validator address> 1000000uctk --from <delegator name>  --fees 5000uctk
+```
+
+To submit an unbonding delegation
+
+```bash
+$ certikcli tx staking unbond <validator address> 1000000uctk --from <delegator name>  --fees 5000uctk
+```
+
+Please note that it will take two weeks to finish the unbonding transaction.
 
 ### CVM Smart Contracts
 
@@ -247,7 +277,7 @@ To deploy a simple smart contract from file `simple.sol'
 $ cat simple.sol
 pragma solidity >=0.4.0 <0.7.0;
 
-contract SimpleStorage {
+contract Simple {
     uint storedData;
 
     function set(uint x) public {
@@ -259,11 +289,28 @@ contract SimpleStorage {
     }
 }
 
-$ certikcli  tx cvm deploy simple.sol --from <deployer address> --fees 5000uctk
+$ certikcli tx cvm deploy simple.sol --from <deployer address> --fees 5000uctk
 ...
 txhash: <transaction hash>
 ...
 ```
+
+Please note that the name of the sol file has to be the same as the name of the contract. If there are more than one contract in a file, the contract with the same name of the file's would be deployed.
+
+If the contract to be deployed has a contructor with parameters to initialize it:
+
+```
+$ cat ctoken.sol:
+...
+contract CToken is ERC20Detailed {
+    constructor (uint256 amount) public ERC20Detailed("CToken", "CT", 18) {
+        _mint(msg.sender, amount * (10 ** uint256(decimals())));
+    }
+}
+
+$ certikcli tx cvm deploy ctoken.sol,1000000 --from <deployer address> --fees 5000uctk
+```
+
 To get the deployed contract address
 
 ```
@@ -277,7 +324,7 @@ $ certikcli query tx <transaction hash>
 To inspect contract code bytes deployed
 
 ```
-certikcli query cvm code <contract address>
+$ certikcli query cvm code <contract address>
 6080604052348015600F57600080FD5B506004361060325760003560E01C806360FE47B114603757
 80636D4CE63C146062575B600080FD5B606060048036036020811015604B57600080FD5B81019080
 80359060200190929190505050607E565B005B60686088565B604051808281526020019150506040
@@ -285,13 +332,13 @@ certikcli query cvm code <contract address>
 278453AB74A855DCC214EA05BF9541E35E851AF41570397593055564736F6C63430005090032
 ```
 
-To call SimpleStorage.set(123)
+To call Simple.set(123)
 
 ```
-certikcli tx cvm call <contract address> set 123 --from <caller address> --fees 5000uctk
+$ certikcli tx cvm call <contract address> set 123 --from <caller address> --fees 5000uctk
 ```
 
-To call SimpleStorage.get()
+To call Simple.get()
 
 ```
 $ certikcli tx cvm call <contract address> get --from <caller address> --fees 5000uctk
@@ -303,7 +350,7 @@ txhash: <transaction hash>
 To verify the read out data is indeed 123 (0x7b)
 
 ```
-certikcli query tx <transaction hash>
+$ certikcli query tx <transaction hash>
 ...
 data: 000000000000000000000000000000000000000000000000000000000000007B
 ...
@@ -314,13 +361,13 @@ data: 000000000000000000000000000000000000000000000000000000000000007B
 To start a local RESTful server connected to the full node connected above
 
 ```
-certikcli rest-server
+$ certikcli rest-server
 ```
 
 For example, to query the current validators
 
 ```
-curl -s http://localhost:1317/staking/validators
+$ curl -s http://localhost:1317/staking/validators
 ```
 
 Here are some query endpoints.
