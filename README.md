@@ -191,13 +191,7 @@ If the transaction is successful, your validator should appear in either the `Ac
 
 ### Queries
 
-`certikcli` supports many query sub-commands. Below are some common examples. More details can be found in the command help printout.
-
-To query the current validator set
-
-```bash
-$ certikcli query staking validators
-```
+`certikcli` supports many query sub-commands. Below are some common examples.
 
 To query a block
 
@@ -215,6 +209,48 @@ To query the status of an account
 
 ```bash
 $ certikcli query account <address>
+```
+
+More details can be found in the command help printout:
+
+```bash
+$ certikcli query --help
+Querying subcommands
+
+Usage:
+  certikcli query [command]
+
+Aliases:
+  query, q
+
+Available Commands:
+  tendermint-validator-set Get the full tendermint validator set at given height
+  block                    Get verified data for a the block at given height
+  txs                      Query for paginated transactions that match a set of events
+  tx                       Query for a transaction by hash in a committed block
+
+  account                  Query account balance
+  upgrade                  Querying commands for the upgrade module
+  auth                     Querying commands for the auth module
+  staking                  Querying commands for the staking module
+  supply                   Querying commands for the supply module
+  mint                     Querying commands for the minting module
+  distribution             Querying commands for the distribution module
+  slashing                 Querying commands for the slashing module
+  cvm                      Querying commands for the CVM module
+  cert                     Querying commands for the certification module
+
+Flags:
+  -h, --help   help for query
+
+Global Flags:
+      --chain-id string   Chain ID of tendermint node
+  -e, --encoding string   Binary encoding (hex|b64|btc) (default "hex")
+      --home string       directory for config and data (default "/home/ubuntu/.certikcli")
+  -o, --output string     Output format (text|json) (default "text")
+      --trace             print out full stack trace on errors
+
+Use "certikcli query [command] --help" for more information about a command.
 ```
 
 ### Transactions
