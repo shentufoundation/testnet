@@ -189,8 +189,6 @@ $ certikcli tx staking create-validator \
 
 If the transaction is successful, your validator should appear in either the `Active` or `Inactive` tabs on the [chain explorer's validators page](https://explorer.certik.foundation/validators).
 
-### 
-
 ### Queries
 
 `certikcli` supports many query sub-commands. Below are some common examples. More details can be found in the command help printout.
@@ -243,24 +241,79 @@ To find all validators
 
 ```bash
 $ certikcli query staking validators
+- |
+  operatoraddress: <operatoraddress1>
+  conspubkey: <conspubkey1>
+  jailed: false
+  status: 2
+  tokens: "4000000000000"
+  delegatorshares: "4000000000000.000000000000000000"
+  ...
+  minselfdelegation: "1"
+- |
+  operatoraddress: <operatoraddress2>
+  conspubkey: <conspubkey2>
+  jailed: false
+  status: 2
+  tokens: "1000000000000"
+  delegatorshares: "1000000000000.000000000000000000"
+  ...
 ```
 
 To submit a delegation to one of the validators
 
 ```bash
 $ certikcli tx staking delegate <validator address> 1000000uctk --from <delegator name>  --fees 5000uctk
+{"chain_id":... "msgs":[{... "value":{"delegator_address":<delegator address>,"validator_address":<validator address>,"amount":{"denom":"uctk","amount":"1000000"}}}],"memo":""}
+...
+```
+
+You can find your delegation to the validator by
+
+```bash
+$ certikcli query staking delegations-to <validator address>
+- delegation:
+    ...
+- delegation:
+    delegator_address: <delegator address>
+    validator_address: <validator address>
+    shares: "1000000.000000000000000000"
+  balance:
+    denom: uctk
+    amount: "1000000"
+...
 ```
 
 To submit a redelegation from one validator to another validator
 
 ```bash
-$ certikcli tx staking redelegate <from validator address> <to validator address> 1000000uctk --from <delegator name>  --fees 5000uctk
+$ certikcli tx staking redelegate <from validator address> <to validator address> 500000uctk --from <delegator name>  --fees 5000uctk
+```
+
+Then you can check all your delegations by
+
+```bash
+$ certikcli query staking delegations $aliceaddr
+- delegation:
+    delegator_address: <delegator address>
+    validator_address: <validator address 1>
+    shares: "500000.000000000000000000"
+  balance:
+    denom: uctk
+    amount: "500000"
+- delegation:
+    delegator_address: <delegator address>
+    validator_address: <validator address 2>
+    shares: "500000.000000000000000000"
+  balance:
+    denom: uctk
+    amount: "500000"
 ```
 
 To submit an unbonding delegation
 
 ```bash
-$ certikcli tx staking unbond <validator address> 1000000uctk --from <delegator name>  --fees 5000uctk
+$ certikcli tx staking unbond <validator address> 500000uctk --from <delegator name>  --fees 5000uctk
 ```
 
 Please note that it will take two weeks to finish the unbonding transaction.
@@ -308,8 +361,13 @@ contract CToken is ERC20Detailed {
     }
 }
 
-$ certikcli tx cvm deploy ctoken.sol,1000000 --from <deployer address> --fees 5000uctk
+$ certikcli tx cvm deploy ctoken.sol,1000000 --from <deployer address> --fees 100000uctk --gas='auto'
+...
+txhash: <transaction hash>
+...
 ```
+
+Please add flag `--gas=auto` if you see an error message saying "InsufficientGas" which means it takes a large amount of gas to deploy this contract.
 
 To get the deployed contract address
 
