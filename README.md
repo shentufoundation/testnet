@@ -6,7 +6,7 @@ This repository hosts the `CertiK Chain` implementation and testnet information.
 
 `CertiK Chain` is the key component in CertiK's vision of building end-to-end secure and trustworthy infrastructure for the blockchain world. Here is a brief [introduction](https://medium.com/certik/introducing-the-certik-chain-26629248da3c) to the chain.
 
-The first version of `CertiK Chain` is the testnet, which will go through three stages: closed alpha, open beta, and full testnet. The overall goal of testnet is to define and implement a majority of the `CertiK Chain` features and build a strong `CertiK Chain` developer and user community by providing opportunities to contribute to the chain design and development, to evaluate the chain's main features, and to develop smart contracts and other usage scenarios around the chain.
+The current version of the testnet is Incentivized Testnet, which anyone can participate to earn real CTK when we arrive at mainnet. The overall goal of testnet is to define and implement a majority of the `CertiK Chain` features and build a strong `CertiK Chain` developer and user community by providing opportunities to contribute to the chain design and development, to evaluate the chain's main features, and to develop smart contracts and other usage scenarios around the chain.
 
 As testnet moves through its various stages, CertiK Foundation expects to provide ample opportunities for active members of the community to be rewarded for their contributions.
 
@@ -16,6 +16,7 @@ As testnet moves through its various stages, CertiK Foundation expects to provid
 * Closed Alpha 2.0 (November 04, 2019)
 * Open Beta 3.0 (November 27, 2019)
 * Full Testnet 4.0 (March 31, 2020)
+* Incentivized Testnet 1.0 (July 15, 2020)
 * ...
 * Mainnet
 
@@ -33,11 +34,15 @@ During this stage, testnet backend and frontend are expected to receive constant
 
 The open beta stage will last until all testnet features are implemented and properly tested.
 
-## Full Testnet (**CURRENT STAGE**)
+## Full Testnet 
 
-The final full stage of testnet starts when the open beta stage exits with all testnet features properly tested, which is the current stage.
+The full stage of testnet starts when the open beta stage exits with all testnet features properly tested, which is the current stage.
 
 During this stage, testnet backend and frontend are exepcted to receive on-demand updates. Branching instead of re-deployment will be preferred when solving chain divergence. The validator set size will be large (e.g., no more than 100).
+
+## Incentivized Testnet (**CURRENT STAGE**)
+
+The Incentivized Testnet will consists of various kinds of smart contracts, governance, and certification transactions. Anyone can participate to earn the rewards.
 
 # How to Participate
 
@@ -65,16 +70,9 @@ With `certikcli` one can create test account key pairs and interact with the tes
 
 ```
 rm -rf ~/.certikcli
-certikcli config chain-id shentu
+certikcli config chain-id shentu-incentivized
 certikcli config node tcp://<full node>:<port>
 certikcli config trust-node true
-```
-
-Use either the following full nodes or your own full nodes created as below.
-
-```
-tcp://3.95.195.221:26657
-tcp://54.147.168.255:26657
 ```
 
 `certikcli` runs on Linux, Windows, and MacOS.
@@ -129,13 +127,6 @@ Edit the following lines.
 ...
 persistent_peers = <persistent node address>
 ...
-```
-
-Below are the available persistent nodes.
-
-```
-1c5550c131c1d1ec747e8ecb5b932c7cf306115d@3.95.195.221:26656
-de4c2266a6a6255585f8783b043baa7344d15abb@54.147.168.255:26656
 ```
 
 Then copy the testnet genesis JSON file to the node configuration directory. The latest genesis file can be found [here](https://github.com/certikfoundation/chain/blob/master/genesis.json). Release-specific genesis file can be found in the [release download](https://github.com/certikfoundation/chain/releases/).
