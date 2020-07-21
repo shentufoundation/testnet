@@ -125,7 +125,7 @@ Edit the following lines.
 
 ```
 ...
-persistent_peers = <persistent node address>
+seeds = "f4678480e4b7f1daee8ff47e6265954f8b57291d@54.234.180.96:26656,f6764b2a92ad718ece49736f521cadab6bfad762@34.229.19.214:26656,be9db97f250a6aeca95b50ef61453cb8d08604e6@34.201.163.218:26656,60a4d4310878ee664cb2ed4d74f79d3940df595a@3.92.81.28:26656"
 ...
 ```
 
