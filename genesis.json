@@ -1,0 +1,1089 @@
+{
+  "genesis_time": "2020-07-15T01:48:13.4486289Z",
+  "chain_id": "shentu-incentivized",
+  "consensus_params": {
+    "block": {
+      "max_bytes": "22020096",
+      "max_gas": "-1",
+      "time_iota_ms": "1000"
+    },
+    "evidence": {
+      "max_age_num_blocks": "100000",
+      "max_age_duration": "172800000000000"
+    },
+    "validator": {
+      "pub_key_types": [
+        "ed25519"
+      ]
+    }
+  },
+  "app_hash": "",
+  "app_state": {
+    "staking": {
+      "params": {
+        "unbonding_time": "1209600000000000",
+        "max_validators": 100,
+        "max_entries": 7,
+        "historical_entries": 0,
+        "bond_denom": "uctk"
+      },
+      "last_total_power": "0",
+      "last_validator_powers": null,
+      "validators": null,
+      "delegations": null,
+      "unbonding_delegations": null,
+      "redelegations": null,
+      "exported": false
+    },
+    "params": null,
+    "crisis": {
+      "constant_fee": {
+        "denom": "uctk",
+        "amount": "1000"
+      }
+    },
+    "auth": {
+      "params": {
+        "max_memo_characters": "256",
+        "tx_sig_limit": "7",
+        "tx_size_cost_per_byte": "10",
+        "sig_verify_cost_ed25519": "590",
+        "sig_verify_cost_secp256k1": "1000"
+      },
+      "accounts": [
+        {
+          "type": "cosmos-sdk/Account",
+          "value": {
+            "address": "certik18v8080cxfyyvgr65tkjncmlmth3rg2vja8nw3z",
+            "coins": [
+              {
+                "denom": "uctk",
+                "amount": "24000000000000"
+              }
+            ],
+            "public_key": "",
+            "account_number": 0,
+            "sequence": 0
+          }
+        },
+        {
+          "type": "cosmos-sdk/Account",
+          "value": {
+            "address": "certik1qyvpg5utjtvwvarf7wz4fncae4wemkcfz4509z",
+            "coins": [
+              {
+                "denom": "uctk",
+                "amount": "22000000000000"
+              }
+            ],
+            "public_key": "",
+            "account_number": 0,
+            "sequence": 0
+          }
+        },
+        {
+          "type": "cosmos-sdk/Account",
+          "value": {
+            "address": "certik1lf74kzmeln8mwmaljgpml9pp6kqklahquytv3v",
+            "coins": [
+              {
+                "denom": "uctk",
+                "amount": "12000000000000"
+              }
+            ],
+            "public_key": "",
+            "account_number": 0,
+            "sequence": 0
+          }
+        },
+        {
+          "type": "cosmos-sdk/Account",
+          "value": {
+            "address": "certik12xl8qes3zecferx6eayjfae64xzvr4ss9j33yd",
+            "coins": [
+              {
+                "denom": "uctk",
+                "amount": "10000000000000"
+              }
+            ],
+            "public_key": "",
+            "account_number": 0,
+            "sequence": 0
+          }
+        },
+        {
+          "type": "cosmos-sdk/Account",
+          "value": {
+            "address": "certik15cewkk9a00qgexjuydwjayffc36q7zktht2qxx",
+            "coins": [
+              {
+                "denom": "uctk",
+                "amount": "30000000000000"
+              }
+            ],
+            "public_key": "",
+            "account_number": 0,
+            "sequence": 0
+          }
+        },
+        {
+          "type": "cosmos-sdk/Account",
+          "value": {
+            "address": "certik1swylgn6r0t30xd8dn63qw7kyr530303q9pldd2",
+            "coins": [
+              {
+                "denom": "uctk",
+                "amount": "28000000000000"
+              }
+            ],
+            "public_key": "",
+            "account_number": 0,
+            "sequence": 0
+          }
+        },
+        {
+          "type": "cosmos-sdk/Account",
+          "value": {
+            "address": "certik1p79pz0gpec4rsq7mc2jzukp8g0x3xczykrt0vj",
+            "coins": [
+              {
+                "denom": "uctk",
+                "amount": "18000000000000"
+              }
+            ],
+            "public_key": "",
+            "account_number": 0,
+            "sequence": 0
+          }
+        },
+        {
+          "type": "cosmos-sdk/Account",
+          "value": {
+            "address": "certik1j3yru7qvegtulq4utkdjp9mfa7fgr402xhrm9e",
+            "coins": [
+              {
+                "denom": "uctk",
+                "amount": "6000000000000"
+              }
+            ],
+            "public_key": "",
+            "account_number": 0,
+            "sequence": 0
+          }
+        },
+        {
+          "type": "cosmos-sdk/Account",
+          "value": {
+            "address": "certik16n58jc8ekqq6cqkt4azajqqlnmsd47uck2mkc5",
+            "coins": [
+              {
+                "denom": "uctk",
+                "amount": "14000000000000"
+              }
+            ],
+            "public_key": "",
+            "account_number": 0,
+            "sequence": 0
+          }
+        },
+        {
+          "type": "cosmos-sdk/Account",
+          "value": {
+            "address": "certik1psnnweulznucxupyk0ngwm3rlkfphucaqnvhw0",
+            "coins": [
+              {
+                "denom": "uctk",
+                "amount": "4000000000000"
+              }
+            ],
+            "public_key": "",
+            "account_number": 0,
+            "sequence": 0
+          }
+        },
+        {
+          "type": "cosmos-sdk/Account",
+          "value": {
+            "address": "certik1s3mvhfkfv7lsau9kljsa5a4hf699sllvf2j0g6",
+            "coins": [
+              {
+                "denom": "uctk",
+                "amount": "16000000000000"
+              }
+            ],
+            "public_key": "",
+            "account_number": 0,
+            "sequence": 0
+          }
+        },
+        {
+          "type": "cosmos-sdk/Account",
+          "value": {
+            "address": "certik19ep5024ptwqrg0tk3qcqaseaapum4hlaeh88rs",
+            "coins": [
+              {
+                "denom": "uctk",
+                "amount": "20000000000000"
+              }
+            ],
+            "public_key": "",
+            "account_number": 0,
+            "sequence": 0
+          }
+        },
+        {
+          "type": "cosmos-sdk/Account",
+          "value": {
+            "address": "certik1l8u899fc4a09kz4zxlqp4f7ac0wxdgweytzpze",
+            "coins": [
+              {
+                "denom": "uctk",
+                "amount": "2000000000000"
+              }
+            ],
+            "public_key": "",
+            "account_number": 0,
+            "sequence": 0
+          }
+        },
+        {
+          "type": "cosmos-sdk/Account",
+          "value": {
+            "address": "certik1r9eteaw2tvk2hm3tdut82dy8fuc476f2pp7wr6",
+            "coins": [
+              {
+                "denom": "uctk",
+                "amount": "8000000000000"
+              }
+            ],
+            "public_key": "",
+            "account_number": 0,
+            "sequence": 0
+          }
+        },
+        {
+          "type": "cosmos-sdk/Account",
+          "value": {
+            "address": "certik173az56kqck3whej8zpetnkjtznhmf2pu8l0xds",
+            "coins": [
+              {
+                "denom": "uctk",
+                "amount": "26000000000000"
+              }
+            ],
+            "public_key": "",
+            "account_number": 0,
+            "sequence": 0
+          }
+        }
+      ]
+    },
+    "distribution": {
+      "params": {
+        "community_tax": "0.000000000000000000",
+        "base_proposer_reward": "0.050000000000000000",
+        "bonus_proposer_reward": "0.000000000000000000",
+        "withdraw_addr_enabled": true
+      },
+      "fee_pool": {
+        "community_pool": []
+      },
+      "delegator_withdraw_infos": [],
+      "previous_proposer": "",
+      "outstanding_rewards": [],
+      "validator_accumulated_commissions": [],
+      "validator_historical_rewards": [],
+      "validator_current_rewards": [],
+      "delegator_starting_infos": [],
+      "validator_slash_events": []
+    },
+    "gov": {
+      "starting_proposal_id": "1",
+      "deposits": null,
+      "votes": null,
+      "proposals": null,
+      "deposit_params": {
+        "min_initial_deposit": [
+          {
+            "denom": "uctk",
+            "amount": "0"
+          }
+        ],
+        "min_deposit": [
+          {
+            "denom": "uctk",
+            "amount": "512000000"
+          }
+        ],
+        "max_deposit_period": "4838400000000000"
+      },
+      "voting_params": {
+        "voting_period": "1209600000000000"
+      },
+      "tally_params": {
+        "DefaultTally": {
+          "quorum": "0.334000000000000000",
+          "threshold": "0.500000000000000000",
+          "veto": "0.334000000000000000"
+        },
+        "CertifierUpdateSecurityVoteTally": {
+          "quorum": "0.334000000000000000",
+          "threshold": "0.667000000000000000",
+          "veto": "0.334000000000000000"
+        },
+        "CertifierUpdateStakeVoteTally": {
+          "quorum": "0.334000000000000000",
+          "threshold": "0.900000000000000000",
+          "veto": "0.334000000000000000"
+        }
+      }
+    },
+    "genutil": {
+      "gentxs": [
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "CertiK",
+                    "identity": "",
+                    "website": "",
+                    "security_contact": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.000000000000000000",
+                    "max_rate": "0.000000000000000000",
+                    "max_change_rate": "0.000000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "certik15cewkk9a00qgexjuydwjayffc36q7zktht2qxx",
+                  "validator_address": "certikvaloper15cewkk9a00qgexjuydwjayffc36q7zktqlwq0u",
+                  "pubkey": "certikvalconspub1zcjduepqj4hjldgwdw6mmjtq6m5yessyuueadpdcpx670m4mtftye0mf0stqhc0r9m",
+                  "value": {
+                    "denom": "uctk",
+                    "amount": "15000000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "0"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "AuTaYOuviRxjwvY5HSSrwzK3BuCPaCnvp9pKAeo1FWVw"
+                },
+                "signature": "AzcIB7aFPJ67m3taAzYFDWo8vurmXzL6XzTlPD2seThVf5+BShM+xJ6wR2dfSr2uuf9J/O6f8JkVwbk3/HMysg=="
+              }
+            ],
+            "memo": "f528fe70ba530481eac38cbc9bc53827f6d68c54@54.221.22.11:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "Flint@Yale",
+                    "identity": "",
+                    "website": "",
+                    "security_contact": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.000000000000000000",
+                    "max_rate": "0.000000000000000000",
+                    "max_change_rate": "0.000000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "certik1swylgn6r0t30xd8dn63qw7kyr530303q9pldd2",
+                  "validator_address": "certikvaloper1swylgn6r0t30xd8dn63qw7kyr530303qj4mdys",
+                  "pubkey": "certikvalconspub1zcjduepqv5e53rt40djvdg7q46srjyswgxjez94j9vdrcr67wvsj89p5d9zq0yd30k",
+                  "value": {
+                    "denom": "uctk",
+                    "amount": "14000000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "0"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "A46FO9bQ34xyC/0UOK5qjrI+MoijsEcTn6QxKu8m2TgZ"
+                },
+                "signature": "Ln8XrtWDDutWp9nZYDt/x11XxNFUPG0+SSkICYNsBpMjcSGPbBA28uzqK1OW6eY5VoNdC5YsMmX1sVH+I3ueng=="
+              }
+            ],
+            "memo": "8278173c2b200b088d946e6556c0a15b2a77c55a@54.211.180.40:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "InfStones",
+                    "identity": "",
+                    "website": "",
+                    "security_contact": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.000000000000000000",
+                    "max_rate": "0.000000000000000000",
+                    "max_change_rate": "0.000000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "certik12xl8qes3zecferx6eayjfae64xzvr4ss9j33yd",
+                  "validator_address": "certikvaloper12xl8qes3zecferx6eayjfae64xzvr4ssjx43dh",
+                  "pubkey": "certikvalconspub1zcjduepq3pqyapsh07zs6qw82n52qcly6uchvtzrnvfjkz7udht48q97vyeqsc0yym",
+                  "value": {
+                    "denom": "uctk",
+                    "amount": "5000000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "0"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "AuuuxfE55Hc4Afi8YRP5lgVP2tACRdqyAH3f9i2e4ZTl"
+                },
+                "signature": "GZ0v/wDewugMFiH3UWL8ySqv4eZYLhMgspXiyr7cc3oMkt1sYJ6o96c07dV98N2y2rVOrXxvs7s5uwSvjThJwQ=="
+              }
+            ],
+            "memo": "7adeb84683dbc78f303fd32c67cca2b9dd447ad0@18.207.1.210:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "SNZ",
+                    "identity": "",
+                    "website": "",
+                    "security_contact": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.000000000000000000",
+                    "max_rate": "0.000000000000000000",
+                    "max_change_rate": "0.000000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "certik1r9eteaw2tvk2hm3tdut82dy8fuc476f2pp7wr6",
+                  "validator_address": "certikvaloper1r9eteaw2tvk2hm3tdut82dy8fuc476f2k46w2q",
+                  "pubkey": "certikvalconspub1zcjduepqj5my7v4mms842qmh8z42htncn9ft324x76almd2js0xyv2wqhhvs4gvxv4",
+                  "value": {
+                    "denom": "uctk",
+                    "amount": "4000000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "0"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "A0qHD9jUbG7Oshy/dRYbd04vwFbXA5hOdeDPUQceiiXX"
+                },
+                "signature": "q5mOCr09sLBM3XkgXViL8cz6uNjyaEFBOL5sQKf6L+JQ3ax4NIAyJP9CZUubGehZxOiCHxnk+3pV85GPjmRYFg=="
+              }
+            ],
+            "memo": "d230a165373dab44390f9c0e5fd3b03594b062aa@3.236.251.130:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "DHVC",
+                    "identity": "",
+                    "website": "",
+                    "security_contact": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.000000000000000000",
+                    "max_rate": "0.000000000000000000",
+                    "max_change_rate": "0.000000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "certik1j3yru7qvegtulq4utkdjp9mfa7fgr402xhrm9e",
+                  "validator_address": "certikvaloper1j3yru7qvegtulq4utkdjp9mfa7fgr4023r8mvr",
+                  "pubkey": "certikvalconspub1zcjduepq3hflt5zzhfqj3l9jtn80mrhdygltk70spz4gdvwkatdhgdxxfz2q0qu8ju",
+                  "value": {
+                    "denom": "uctk",
+                    "amount": "3000000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "0"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "A8oRMkcULmQ2kZBrVXxghRPUCqIwSTBY6y4qNwqz0QRZ"
+                },
+                "signature": "kpPhXVbx4Oc+t8ryj+h/GHIMq8cNHKyK4NqX/QrhgHhVS30B/uux+tWAJZrSxqy2z7j08GgJziGN2WSchKuBaQ=="
+              }
+            ],
+            "memo": "556d09cdb4a5d5365f487fd48907b1fece32b960@54.160.181.171:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "吞吴",
+                    "identity": "",
+                    "website": "",
+                    "security_contact": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.000000000000000000",
+                    "max_rate": "0.000000000000000000",
+                    "max_change_rate": "0.000000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "certik1psnnweulznucxupyk0ngwm3rlkfphucaqnvhw0",
+                  "validator_address": "certikvaloper1psnnweulznucxupyk0ngwm3rlkfphucah8gh84",
+                  "pubkey": "certikvalconspub1zcjduepqdve57pddqquvd57pwltzztnhjews6926809crr3qpgwqtp20pqeqyrklee",
+                  "value": {
+                    "denom": "uctk",
+                    "amount": "2000000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "0"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "AiE8hK9OUYkAWoUe0x0jh41aJgjXbvVy90e60Lkk9mX0"
+                },
+                "signature": "tPmnpHCKjBR2jWicrowGrigQE9ADPu0HjukHmLXLrAtbuvUs4WQobIWxVH1Xagbsse76TsoMunRTAKrfXkoTTA=="
+              }
+            ],
+            "memo": "1517c083bc069d77ab8e7ab772cce57b2f8c102b@54.208.5.36:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "Arrington Capital",
+                    "identity": "",
+                    "website": "",
+                    "security_contact": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.000000000000000000",
+                    "max_rate": "0.000000000000000000",
+                    "max_change_rate": "0.000000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "certik1l8u899fc4a09kz4zxlqp4f7ac0wxdgweytzpze",
+                  "validator_address": "certikvaloper1l8u899fc4a09kz4zxlqp4f7ac0wxdgwenlxptr",
+                  "pubkey": "certikvalconspub1zcjduepqwu9zhngaruc2ac2kwttfp9klynqw6zzk6x0rxgkwsjpgl2gzn0fqcy0n20",
+                  "value": {
+                    "denom": "uctk",
+                    "amount": "1000000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "0"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "AryJW2kwnJb0xzV/ApbGDmT5VUZ5ejiwje7EKnA/xmK3"
+                },
+                "signature": "qt8f9aLMEFnqCOmcMIoPSMEelk9Dm9HfdAXETUYJt0Yq1CeiZh9hpkywPS/QJRPm3CqnDgSQPmlreGhYe/GZdg=="
+              }
+            ],
+            "memo": "015f2e396e44ee58ec26fed73a5cd4cf1c1e5eea@35.175.123.152:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "VeriGu@Columbia",
+                    "identity": "",
+                    "website": "",
+                    "security_contact": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.000000000000000000",
+                    "max_rate": "0.000000000000000000",
+                    "max_change_rate": "0.000000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "certik173az56kqck3whej8zpetnkjtznhmf2pu8l0xds",
+                  "validator_address": "certikvaloper173az56kqck3whej8zpetnkjtznhmf2pusttxy2",
+                  "pubkey": "certikvalconspub1zcjduepqpfpgneauzcgfldt786l85hal9au5pm0akhmdm4tg725ek4aeknrsrvrys5",
+                  "value": {
+                    "denom": "uctk",
+                    "amount": "13000000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "0"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "AqRAJ04BVYcb7CF7RHl8Cj0yXDIOoAHnjJVqmJIkzA2t"
+                },
+                "signature": "q3lmJbhcSsW4fxe+1W6u5kaE5NrEiyf5A9TCFAw24bc76Cjesqy7J/XedVhlR93KwtGt2jmbLwgpEX/Fj/GDiQ=="
+              }
+            ],
+            "memo": "fd376c28296fc067a5bd1715f1e93a59d355cc82@18.234.76.41:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "DeepSEA",
+                    "identity": "",
+                    "website": "",
+                    "security_contact": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.000000000000000000",
+                    "max_rate": "0.000000000000000000",
+                    "max_change_rate": "0.000000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "certik18v8080cxfyyvgr65tkjncmlmth3rg2vja8nw3z",
+                  "validator_address": "certikvaloper18v8080cxfyyvgr65tkjncmlmth3rg2vj2nhwcc",
+                  "pubkey": "certikvalconspub1zcjduepqvap3kpcq7tykm60dwukylqqg9vq202kxrx0phrv8hhgea3tg0eps9mq7kk",
+                  "value": {
+                    "denom": "uctk",
+                    "amount": "12000000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "0"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "A4tncowRiMRi2gn1vIpouiLVemm4Vaj23WOERWHpO8pH"
+                },
+                "signature": "K0PG2qZXppJDWRZI6BAOgu8DPuE6WPhYPLdENH79H0BSl7mWUqdSXDCbCf1bSFMDGyMB8QghKQkt60oXtbEFuQ=="
+              }
+            ],
+            "memo": "982bbe8b8dff76cde9a2e6fe36ee2e4045196561@54.209.117.24:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "CertiKOS",
+                    "identity": "",
+                    "website": "",
+                    "security_contact": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.000000000000000000",
+                    "max_rate": "0.000000000000000000",
+                    "max_change_rate": "0.000000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "certik1qyvpg5utjtvwvarf7wz4fncae4wemkcfz4509z",
+                  "validator_address": "certikvaloper1qyvpg5utjtvwvarf7wz4fncae4wemkcf4ps0vc",
+                  "pubkey": "certikvalconspub1zcjduepqhgrptdyleywr2grlcqkgsrafptzlc3lky5eu820n0w95s0ehx2xst0q2fw",
+                  "value": {
+                    "denom": "uctk",
+                    "amount": "11000000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "0"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "AnBAwIgJUJib55GtGVhdQ28QT5OfTAfZosH1iHIMNruf"
+                },
+                "signature": "vpsi+Wo9CmQmE8OxxNhaqqfYCxuuRV90rTYEimZZrc9eMJhTUW2Ji8/0Nt0HcTWdhpRMwFC3/2Hnl4u4KZgDJQ=="
+              }
+            ],
+            "memo": "e31a08421a9f534eb2bb6c3d98ad8f400c602221@54.236.56.157:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "CVM",
+                    "identity": "",
+                    "website": "",
+                    "security_contact": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.000000000000000000",
+                    "max_rate": "0.000000000000000000",
+                    "max_change_rate": "0.000000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "certik19ep5024ptwqrg0tk3qcqaseaapum4hlaeh88rs",
+                  "validator_address": "certikvaloper19ep5024ptwqrg0tk3qcqaseaapum4hlawrr822",
+                  "pubkey": "certikvalconspub1zcjduepqaav3zeu3c4t0drh0snq6ujhex6qfwgc8vl2pc89e7klhfq5ukflq7v3szy",
+                  "value": {
+                    "denom": "uctk",
+                    "amount": "10000000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "0"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "Ar6AjCCX7/Cp+ECDw7edfKkMaz5v+C5hLf1CCtjQwFsn"
+                },
+                "signature": "e+RcUckxRrYWs8Xgi9tmIddbUEg3aXrzKpa4bWhkl/Rsq4Vlp4/cw0aPHCX+cMDxXydQHu8RxjG29BcdRKAJdA=="
+              }
+            ],
+            "memo": "87f60a59b6b1a75aa490d00e5b869c3055c62555@3.236.111.73:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "DeepWallet",
+                    "identity": "",
+                    "website": "",
+                    "security_contact": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.000000000000000000",
+                    "max_rate": "0.000000000000000000",
+                    "max_change_rate": "0.000000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "certik1p79pz0gpec4rsq7mc2jzukp8g0x3xczykrt0vj",
+                  "validator_address": "certikvaloper1p79pz0gpec4rsq7mc2jzukp8g0x3xczyph009g",
+                  "pubkey": "certikvalconspub1zcjduepqkym56clev7kzj0ccr6ke9zjsxxm74hm8mqdd2hnrs9kw4v2w8c5sx9rxrg",
+                  "value": {
+                    "denom": "uctk",
+                    "amount": "9000000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "0"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "Au6jscMmIRHMJAnRPDCDi8vFPrD+/51En2qGTYMtnHne"
+                },
+                "signature": "mi7QKSP1F2i+1e2+VHN5/J7UiJmzWR+WvSoV4r6dhR8iLuszZYOQKnMo6LbNEf9gwTaujHnRuX1NT4IvnmzxKw=="
+              }
+            ],
+            "memo": "c3ee6a267b71ed74d2465a52997e7fa45f56506b@3.80.68.222:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "NoOps",
+                    "identity": "",
+                    "website": "",
+                    "security_contact": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.000000000000000000",
+                    "max_rate": "0.000000000000000000",
+                    "max_change_rate": "0.000000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "certik1s3mvhfkfv7lsau9kljsa5a4hf699sllvf2j0g6",
+                  "validator_address": "certikvaloper1s3mvhfkfv7lsau9kljsa5a4hf699sllv77k0pq",
+                  "pubkey": "certikvalconspub1zcjduepqwnqwxekd0lndyheegddc0m4h7z6dta4xdj8jwn0effk4pzthmzdsxk44u9",
+                  "value": {
+                    "denom": "uctk",
+                    "amount": "8000000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "0"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "AnjTb3ga+Nnd6Y+lhqm3AszNBRYbnzPi2aIz1kZLHOWZ"
+                },
+                "signature": "HOz1eAwd85Em6I5vN9RKjuN5T7W+3lnAzrwr4RRQvgsqJjo5VkN7zjAGoQJlACpTFBGfW7SKYcbyjkc6fFiftw=="
+              }
+            ],
+            "memo": "5df0d1898bbb3d5c49da33a42e9f6dba3df9fe9b@3.92.167.62:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "Bitmain",
+                    "identity": "",
+                    "website": "",
+                    "security_contact": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.000000000000000000",
+                    "max_rate": "0.000000000000000000",
+                    "max_change_rate": "0.000000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "certik16n58jc8ekqq6cqkt4azajqqlnmsd47uck2mkc5",
+                  "validator_address": "certikvaloper16n58jc8ekqq6cqkt4azajqqlnmsd47ucp7lk3w",
+                  "pubkey": "certikvalconspub1zcjduepqk604k3tzwp9g738xyz788uh7kvnpu665ej3lcpayrthddpszqwvs7uj24c",
+                  "value": {
+                    "denom": "uctk",
+                    "amount": "7000000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "0"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "Ao8Jjh1CALjzKJLaHS+JH3L48leFQH22/gcyW9Nyojo7"
+                },
+                "signature": "pHAs7Sjiklyl3UFu8Mw5mV4j2jafkBrtjEoX8Rb6rFoV0AvdhFJ4y34iJ5rE0HSWKyWSwOhsRDFIrhbqOLMRMg=="
+              }
+            ],
+            "memo": "143fef5de3bf3c16fb9d744dea1009a84b337ddc@3.222.117.144:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "Fenbushi Capital",
+                    "identity": "",
+                    "website": "",
+                    "security_contact": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.000000000000000000",
+                    "max_rate": "0.000000000000000000",
+                    "max_change_rate": "0.000000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "certik1lf74kzmeln8mwmaljgpml9pp6kqklahquytv3v",
+                  "validator_address": "certikvaloper1lf74kzmeln8mwmaljgpml9pp6kqklahqts0vck",
+                  "pubkey": "certikvalconspub1zcjduepqya5eg3kv5ra6ywfkneskqqe9qhrexx5x0np6jtx7r8ypdje0f89s8uawe0",
+                  "value": {
+                    "denom": "uctk",
+                    "amount": "6000000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "0"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "AjBYbxs6bFJJH/C7xPJzl11xdorrJJWHXFC44PrccZ33"
+                },
+                "signature": "2VNmWJ6k2XNbFeSvn/tD5xRS/LxWFgtAFRl1Hkt/xUJMvaLjvsVTv1BECBIwCiFGdXwzeVxgjE3MiGwr+idb6g=="
+              }
+            ],
+            "memo": "6be192d3c0914fb93b5199eaf5edfeae36418084@18.233.100.57:26656"
+          }
+        }
+      ]
+    },
+    "bank": {
+      "send_enabled": true
+    },
+    "cert": {
+      "certifiers": [
+        {
+          "certifier": "certik1mm4zra5y4auak3f03q3r9qxfukh8nn7qhsmk0w",
+          "alias": "",
+          "proposer": "",
+          "description": "",
+          "first": true
+        }
+      ],
+      "validators": null,
+      "platforms": null,
+      "certificateID": "0",
+      "certificates": null,
+      "libraries": null
+    },
+    "cvm": {
+      "gasrate": "1",
+      "contracts": null,
+      "metadata": null
+    },
+    "supply": {
+      "supply": []
+    },
+    "mint": {
+      "minter": {
+        "inflation": "0.070000000000000000",
+        "annual_provisions": "0.000000000000000000"
+      },
+      "params": {
+        "mint_denom": "uctk",
+        "inflation_rate_change": "0.100000000000000000",
+        "inflation_max": "0.140000000000000000",
+        "inflation_min": "0.040000000000000000",
+        "goal_bonded": "0.670000000000000000",
+        "blocks_per_year": "6311520"
+      }
+    },
+    "slashing": {
+      "params": {
+        "signed_blocks_window": "100",
+        "min_signed_per_window": "0.500000000000000000",
+        "downtime_jail_duration": "600000000000",
+        "slash_fraction_double_sign": "0.050000000000000000",
+        "slash_fraction_downtime": "0.010000000000000000"
+      },
+      "signing_infos": {},
+      "missed_blocks": {}
+    },
+    "upgrade": {}
+  }
+}
