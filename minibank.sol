@@ -31,7 +31,7 @@ contract MiniBank {
     }
 
     /// Withdraw amount from MiniBank
-    /// @param withdraw amount
+    /// @param withdrawAmount amount for withdrawing
     /// @return The ramaining balance 
     function withdraw(uint withdrawAmount) public returns (uint) {
         require(withdrawAmount <= accounts[msg.sender]);
