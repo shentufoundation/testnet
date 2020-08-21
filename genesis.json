@@ -1,0 +1,1854 @@
+{
+    "app_hash": "",
+    "app_state": {
+        "auth": {
+            "accounts": [
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1up7kaqxxvexgrpuxt6y2258qc3dkjdzvyp29v4",
+                        "coins": [
+                            {
+                                "amount": "1000000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1qrexjjf0w25supgma65gsz27kmleutwcxnww2g",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1j56sracmtndxcqz4q072p6q0g2jr3wxsqkhzjj",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1m2w4vyh4llf9as7he9yxc0fzg59acp27h6cjjj",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1duuw25rcw0c5fqsct2q8vtlz2wn4j72myalhhd",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik154zv3jtyrtu8fxhmh5a9zueg5fe80pc4u2l2x8",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1pdfr7xuckj6lhdphdde6peres9ufwgpsdfhc8u",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik10avqv0kltxz3at857dhsutclazv358z7y6j5ea",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1u23k577q5ssrd3ar87peaurl6vmry3t404xfyg",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik17deyw332r3vvmj4uz6syl6axe0te5hn8alrs9q",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1kf572k8w4uzmnvnwx7mqgdynn4nd9eppj4zgzl",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1a84kfsl6y9zxe7mdq3ymf2c8kr4xjy059smm5t",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik13h8g809ygpld68le2jehpuhwqltt97735757dm",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik109anras6x60s8xt5mn0zr5sraaj7qglfp7n294",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1w5t6my3nfwtrxeaq25ups6q95zgpk6dcqqq9qx",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1258a8tvt5l3jncvgzx8cea6gukc5a43m2s8gy4",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1kn4afshlqvrrxahdn0jx7dak3mjcsm2py6a97a",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik18nq2q0e0ws9q3shwh5n75q6chswfmq4f6zzar0",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1x59p3rkfaz5h8lqwwme7y8rs0svrxh5up7xqsk",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1krcc4uxz2aa2xknplunexahj7fmrv3v0tfwc3c",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1yk32gernqafsf7w5e2yrlqgg2n35runw88rpeh",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik12kmuarzu04f3fm39pcxqnv9fczdu37zrnlzsay",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1ku67auuchqshd8pn2aq0zjtu5u8xr5xz78mmjk",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1vn2wweejd5c4tppt2f20fnwd5y8cceanq9mtrj",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik18wtcmu3l3p0qu933vehq3ycp0jmu6zpvwakh3g",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1ama789lvx8867zx9d75cmwarqs7cslkfmhk5cs",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1etcv4v755uhr8n3usg5lrzvhnr0s0js8z42vm0",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1gtnajqexnnm27z87jx2mk08yfh0yhgsd90tuxt",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik19vzy5d3p3uvndhpz4zrccfny2plwnqmjppd08h",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1emv5j4rk43232ysy64lgpnypqjqujf52ewh8zz",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1ysluagmlm4k9rh5ec9xvtyjz82nkanp5trn3px",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1lxnrxzmwhlwslaw8uwxscd33f03vtc37hse5zk",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1a3ujlsdwx66pxstwx4zkvczuczny4j4rw2qpz8",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1ek2qvaccdfjfarkf5n3z65ks5d9sqwedq687nx",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1mxh72yxt2x0njvmc4r7gv97m8pfkc2qt68kq6w",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1wzzgn0a52xu0gllp9f49ts53w08em7grcrrhgv",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik16nxl5zmas9cl882yuft8rq9r0l46staut9vz0d",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik17unk0gpzk0659x574xzz48f6ll6fggg8t4adrc",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik18cxkzellxc9avu0ea5gschyuvrqfzy26ja420g",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1ejqt89rvmjmv06d2g0z6eucr0mgv32c2nq5szm",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik168vy83nhfgdgeerr7z7dlcjhh0m54dgk5sk9nq",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1k4m7nlseksmsgzql33tp360gfcavzx976zq4sm",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1qvjm66uya4etu82lumxqugkl37u0fc2jmmnthx",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik164nzsp5z4at2yays4eg8kt0u9d0suq04dq84uk",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1zp0ykxd9wndeafd9nl9q9arxj7x0helxusd67y",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1gzdjxajswmfg48nmmcf6rxly4r0zv2v3sk3tfm",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1yq8a2ksa7dz8wd8wlks3k8nqdmht76xdyhge7u",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik17mdn887kel9e7hchnexyrc2h3d4rjy6yk7wzfu",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik149emc90cm0t28uacdn8g5mg3fk00rqtf020ydm",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1u3tfeuyree5gscxtcjlx9f65zyereqacvt2ld7",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1geuqfgxmxsnakex4mf3wgupejrfs47ac89smah",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik13mc6a8aatvgw9p6ac904y8ek500m7zk7m75xrw",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1vkfal630v69z589dgkqf2x732syarsuhs2wjw8",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1rzaflxdm9txze6y76ug2mthc2sz5kyyvk4qmpq",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik18r8jhr3tjkh4wsv8nm0gm5jsg8n8pn6fc9gmdh",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1x95qvkclwg3jmx6xm43fr8a88vptc63yv5pp6d",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik15dmahthee44ptvk5mmr2ffhzuuq0r3356egzjh",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1lnegpma68sykwdd04npah5lpuacxtj8wk6e6xd",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1sxjmhqt93tlu2j2zvgmk5zz3ny8h0judgll2a3",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik18fa7lgnhr9v27vxqgxz5aa7r8mzmhe6vcz3sd4",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1ppqj378sctx8xp50s5dsm0emfk75sef09veafm",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik145n37maf5ffx2qczr9yvx6xrhhm6tta0yy8f50",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1jpgr6xan0axu45afx2wrgdp72w4ermdlm4rztw",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1z7u3fr9njy4ydn8yrkvcqpn8k9kyh28qxsvlja",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1wv8e8ffqtzq040vtkx5dwlqvyy9m8v29m37r04",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1ntwl7yvsmrwfzhq6tv6kr3tm6hqhsgynmaw2ps",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1kkscnekyq9zrgvx4tj2kazapgym8lu5aulrkk7",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1jysnrzv270432584dlf3u3tsgk3yj0stde6krd",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1efrp3qgyzfrwetqrf7992cadn0wx0ngp0r8pgr",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1z0s0zrm8qu8x37ce08uhfjd42vh8k6x79ssknm",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1jjxq38pc8w20zwe7ut0wj7z9lyurn7e67m4zhn",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik12l26qcxw7s6ee0s934z9ryqq6hvkka32s8uswm",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1dal56q7t56aw3yu2vsg8vax897hmhq8j0wxnew",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1u4sgfp350szs6av27twzm7v0s4t3hjhaev2uxm",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1ydmp99fm0muq4ns2d7y4ylg5t34y9vd4dzfhdt",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1e20aly8hqnkzg6s3uhsj5p7u9jr5n8leu8jsmc",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1u7t7t83698ax36prjjh0vspll73q4jree2xw6c",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1ey3eh90n4zzqpdl8n9qhcxy5akuaffq7up9gat",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1jwmfj2jw7laamnwuwp6yqakauv7zm9yd3qqe4r",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1h459qdww26w0wrj5fkm4lc4n5fxydy2zjeel8g",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1n7ra8tg638z7cnjheqc2kca65fxtsc32hfy5nr",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1tze2gm447hs6d8gass3v0tngdfnjdp4pzezez3",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik19vnkaldjr26stgnactwtugaae6z9yr2hmp03p5",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1w4zvsr5dqhgcx3elm76m4vvklf8awqv03pchnz",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1kdrn8u2snnk6el63ay0rvfjv4u0gsqvcmy9xwk",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik13q0cfrh5tv2tvdhc3yl32p776uwryympsx5mqy",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik19dty3jwjxjkwnh04hdvqh7nnjysfkqx74pwr74",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1lwccdd4f7ameyatvp5aaxcvsz8rtr87pfl0eqj",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1vedew8th2smft44a60tgv4flstjkv8hgy0zcrw",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1wkhw3e86nrvhfsnm2dthn2yutdfeqyvh94akj3",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1np5m58l3vmzms25a6h85345nfcprxdtktdzry4",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1803hssfccj62ta3kl20vc0cqzk23vkj952wrj3",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik12v4e0ydhmnpw8gck0c33ulfzkt837355354huf",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1ta0ndyfue8dffhwxdmznkwmqssavsvpf55rs0q",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1z6rtr2ewkfq65l8zgxjk5kldhst4nc6v0svzdt",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1s22n3ff38ny8xu48vhmc5qnjyl0pcg7eta8mrz",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1rhm5300gw78dfg6pklppdftne5ukfgrerr52p9",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1hy8qj2uuqghnd0zxnht7a4q64ehm8ckdnqyx77",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik172q3jmrpnuzr62fwczcvvu0wka59aclpezz7er",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik13z59dtlf0rwgn5xc88f04llm9vwp42nws6vzwa",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1gk8wmalkhwmgxjxfhl6vftqttpwmzwrugyy7y6",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik143derd3kc53j0dxgxhssut9wrzemmzddwr26lt",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik18zehg7rvaatt6a7zf6a687kn455k7al7pq7x68",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik124f0t6cl3vpwp5sclhasf6hh8y4c5dd94fkqfv",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1drn0urg4jyjnpuqkrn8rr0g479tg675naxp7qv",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1zdlg5slkct27ayl6ulkdfprnrecqzqha6rhxk9",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1ac90pvpxcjqz8k8cnqgp7ca538d37u9sqc05jj",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1kcccuvjqlxg9g7wr480fejnqhwrtpmyd66apej",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik17ym37c4zhuzwt7enfternvggfn78z5py32zng9",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1ax3wxhlme9vyytxr00vur2cp4z6f6q3qd9k4em",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                },
+                {
+                    "type": "cosmos-sdk/Account",
+                    "value": {
+                        "account_number": "0",
+                        "address": "certik1xmflj3tddm94546dq4epj0yhsxky2vc7ptzcd6",
+                        "coins": [
+                            {
+                                "amount": "100000000000",
+                                "denom": "uctk"
+                            }
+                        ],
+                        "public_key": null,
+                        "sequence": "0"
+                    }
+                }
+            ],
+            "params": {
+                "max_memo_characters": "256",
+                "sig_verify_cost_ed25519": "590",
+                "sig_verify_cost_secp256k1": "1000",
+                "tx_sig_limit": "7",
+                "tx_size_cost_per_byte": "10"
+            }
+        },
+        "bank": {
+            "send_enabled": true
+        },
+        "cert": {
+            "certificates": null,
+            "certifiers": [
+                {
+                    "alias": "",
+                    "certifier": "certik1up7kaqxxvexgrpuxt6y2258qc3dkjdzvyp29v4",
+                    "description": "",
+                    "proposer": ""
+                }
+            ],
+            "libraries": null,
+            "platforms": null,
+            "validators": null
+        },
+        "crisis": {
+            "constant_fee": {
+                "amount": "1000",
+                "denom": "uctk"
+            }
+        },
+        "cvm": {
+            "contracts": null,
+            "gasrate": "1",
+            "metadata": null
+        },
+        "distribution": {
+            "delegator_starting_infos": [],
+            "delegator_withdraw_infos": [],
+            "fee_pool": {
+                "community_pool": []
+            },
+            "outstanding_rewards": [],
+            "params": {
+                "base_proposer_reward": "0.050000000000000000",
+                "bonus_proposer_reward": "0.000000000000000000",
+                "community_tax": "0.000000000000000000",
+                "withdraw_addr_enabled": true
+            },
+            "previous_proposer": "",
+            "validator_accumulated_commissions": [],
+            "validator_current_rewards": [],
+            "validator_historical_rewards": [],
+            "validator_slash_events": []
+        },
+        "genutil": {
+            "gentxs": []
+        },
+        "gov": {
+            "deposit_params": {
+                "max_deposit_period": "172800000000000",
+                "min_deposit": [
+                    {
+                        "amount": "512000000",
+                        "denom": "uctk"
+                    }
+                ],
+                "min_initial_deposit": [
+                    {
+                        "amount": "0",
+                        "denom": "uctk"
+                    }
+                ]
+            },
+            "deposits": null,
+            "proposals": null,
+            "starting_proposal_id": "1",
+            "tally_params": {
+                "CertifierUpdateSecurityVoteTally": {
+                    "quorum": "0.334000000000000000",
+                    "threshold": "0.667000000000000000",
+                    "veto": "0.334000000000000000"
+                },
+                "CertifierUpdateStakeVoteTally": {
+                    "quorum": "0.334000000000000000",
+                    "threshold": "0.900000000000000000",
+                    "veto": "0.334000000000000000"
+                },
+                "DefaultTally": {
+                    "quorum": "0.334000000000000000",
+                    "threshold": "0.500000000000000000",
+                    "veto": "0.334000000000000000"
+                }
+            },
+            "votes": null,
+            "voting_params": {
+                "voting_period": "172800000000000"
+            }
+        },
+        "mint": {
+            "minter": {
+                "annual_provisions": "0.000000000000000000",
+                "inflation": "0.070000000000000000"
+            },
+            "params": {
+                "blocks_per_year": "6311520",
+                "goal_bonded": "0.670000000000000000",
+                "inflation_max": "0.140000000000000000",
+                "inflation_min": "0.040000000000000000",
+                "inflation_rate_change": "0.100000000000000000",
+                "mint_denom": "uctk"
+            }
+        },
+        "oracle": {
+            "operators": null,
+            "pool_params": {
+                "locked_in_blocks": "30",
+                "minimum_collateral": "50000"
+            },
+            "task_params": {
+                "task_aggregation_result": "1",
+                "task_aggregation_window": "20",
+                "task_epsilon1": "1",
+                "task_epsilon2": "100",
+                "task_expiration_duration": "86400000000000",
+                "task_threshold_score": "128"
+            },
+            "tasks": null,
+            "total_collateral": [],
+            "withdraws": null
+        },
+        "params": null,
+        "slashing": {
+            "missed_blocks": {},
+            "params": {
+                "downtime_jail_duration": "600000000000",
+                "min_signed_per_window": "0.500000000000000000",
+                "signed_blocks_window": "100",
+                "slash_fraction_double_sign": "0.000000000000000000",
+                "slash_fraction_downtime": "0.000000000000000000"
+            },
+            "signing_infos": {}
+        },
+        "staking": {
+            "delegations": null,
+            "exported": false,
+            "last_total_power": "0",
+            "last_validator_powers": null,
+            "params": {
+                "bond_denom": "uctk",
+                "historical_entries": 0,
+                "max_entries": 7,
+                "max_validators": 125,
+                "unbonding_time": "1209600000000000"
+            },
+            "redelegations": null,
+            "unbonding_delegations": null,
+            "validators": null
+        },
+        "supply": {
+            "supply": []
+        },
+        "upgrade": {}
+    },
+    "chain_id": "shentu-rts",
+    "consensus_params": {
+        "block": {
+            "max_bytes": "22020096",
+            "max_gas": "-1",
+            "time_iota_ms": "1000"
+        },
+        "evidence": {
+            "max_age_duration": "172800000000000",
+            "max_age_num_blocks": "100000"
+        },
+        "validator": {
+            "pub_key_types": [
+                "ed25519"
+            ]
+        }
+    },
+    "genesis_time": "2020-08-31T07:00:00Z"
+}
