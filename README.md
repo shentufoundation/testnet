@@ -311,53 +311,10 @@ To start a local RESTful server connected to the full node connected above
 certikcli rest-server
 ```
 
+you can look through the swagger documents through `localhost:1317/swagger/` while the `certikcli rest-server` is running.
+
 For example, to query the current validators
 
 ```
 curl -s http://localhost:1317/staking/validators
-```
-
-Here are some query endpoints.
-
-```
-/auth/accounts/{address}
-/bank/balances/{address}
-/blocks/latest
-/blocks/{height}
-/cvm/abi/{address}
-/cvm/code/{address}
-/cvm/storage/{address}/{key}
-/distribution/community_pool
-/distribution/delegators/{delegatorAddr}/rewards
-/distribution/delegators/{delegatorAddr}/rewards/{validatorAddr}
-/distribution/delegators/{delegatorAddr}/withdraw_address
-/distribution/parameters
-/distribution/validators/{validatorAddr}
-/distribution/validators/{validatorAddr}/outstanding_rewards
-/distribution/validators/{validatorAddr}/rewards
-/node_info
-/node_version
-/slashing/parameters
-/slashing/signing_infos/page={page}&limit={limit}
-/slashing/validators/{validatorPubKey}/signing_info
-/staking/delegators/{delegatorAddr}/delegations
-/staking/delegators/{delegatorAddr}/delegations/{validatorAddr}
-/staking/delegators/{delegatorAddr}/txs
-/staking/delegators/{delegatorAddr}/unbonding_delegations
-/staking/delegators/{delegatorAddr}/unbonding_delegations/{validatorAddr}
-/staking/delegators/{delegatorAddr}/validators
-/staking/delegators/{delegatorAddr}/validators/{validatorAddr}
-/staking/parameters
-/staking/pool
-/staking/redelegations
-/staking/validators
-/staking/validators/{validatorAddr}
-/staking/validators/{validatorAddr}/delegations
-/staking/validators/{validatorAddr}/unbonding_delegations
-/syncing
-/txs
-/txs/{hash}
-/validatorsets/latest
-/validatorsets/{height}
-/version
 ```
