@@ -17,6 +17,7 @@ As testnet moves through its various stages, CertiK Foundation expects to provid
 * Open Beta 3.0 (November 27, 2019)
 * Full Testnet 4.0 (March 31, 2020)
 * Incentivized Testnet 1.0 (July 15, 2020)
+* Validator Program <Raise the Stakes> (September 07, 2020)
 * ...
 * Mainnet
 
@@ -40,9 +41,11 @@ The full stage of testnet starts when the open beta stage exits with all testnet
 
 During this stage, testnet backend and frontend are exepcted to receive on-demand updates. Branching instead of re-deployment will be preferred when solving chain divergence. The validator set size will be large (e.g., no more than 100).
 
-## Incentivized Testnet (**CURRENT STAGE**)
+## Incentivized Testnet & Validator Competition Program (**CURRENT STAGE**)
 
-The Incentivized Testnet will consists of various kinds of smart contracts, governance, and certification transactions. Anyone can participate to earn the rewards.
+The Incentivized Testnet will consist of various kinds of smart contracts, governance, and certification transactions. Anyone can participate to earn the rewards.
+
+Moreover, it will run parallel with the validator program "Raise the Stakes" for some time from September 7th. The Validator Program will consist of many different tasks for the node runners to earn rewards.
 
 # How to Participate
 
@@ -70,7 +73,7 @@ With `certikcli` one can create test account key pairs and interact with the tes
 
 ```
 rm -rf ~/.certikcli
-certikcli config chain-id shentu-incentivized
+certikcli config chain-id <chain-id>
 certikcli config node tcp://<full node>:<port>
 certikcli config trust-node true
 ```
