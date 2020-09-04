@@ -27,3 +27,7 @@ When the final genesis released with all genesis transactions included, you can 
     seeds = "<some seeds above separated by comma>"
     ```
  3. Start certikd daemon.
+ 
+Note that the `genesis_time` in the genesis file is set to September 7th 07:00 UTC, which means the chain will not start until that time.
+
+We will upload the genesis file and its hash here when it's ready.
