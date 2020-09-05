@@ -32,7 +32,11 @@ When the final genesis released with all genesis transactions included, you can 
     ```
     seeds = "1564296ac09e12fd8a7c84c43d2a26abfb0d1f41@3.235.225.172:26656,a5fb59fd0b4c591ffa69f20f01f132f040dd68b4@100.27.49.255:26656"
     ```
- 3. Start certikd daemon.
+ 3. <b>Reset certikd data through the following command:</b>
+    ```
+    certikd unsafe-reset-all
+    ```
+ 4. Start certikd daemon.
  
 Note that the `genesis_time` in the genesis file is set to September 7th 07:00 UTC, which means the chain will not start until that time.
 If you have everything set up correctly, if you run 
