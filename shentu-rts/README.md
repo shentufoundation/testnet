@@ -1,7 +1,7 @@
 # Shentu Raise the Stakes #
 
  - Go version: [1.14.x](https://golang.org/dl/)
- - `certik` binary versions: [0.13.x](https://github.com/certikfoundation/chain/releases)
+ - `certik` binary versions: [0.13.x](https://github.com/certikfoundation/testnet/releases)
 
 This directory is for joining and accumulating the data for shentu Raise the Stakes validator program.
 
