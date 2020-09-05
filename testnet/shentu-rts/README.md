@@ -55,3 +55,9 @@ I[2020-09-04|19:43:44.414] Genesis time is in the future. Sleeping until then...
 Showing that everything is set up correctly and the daemon is waiting for the genesis time.
 
 The genesis file and its hash will be updated here when it's ready.
+
+shasum of genesis.json:
+```
+> shasum testnet/shentu-rts/genesis.json
+90b9a79d4a795e1c8d343480a71578ad60253588  testnet/shentu-rts/genesis.json
+```
