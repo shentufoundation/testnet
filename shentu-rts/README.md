@@ -7,21 +7,6 @@
 ## Summary
 This directory is for joining and accumulating the data for shentu Raise the Stakes validator program. You should find all participants' genesis accounts as well as genesis transactions here.
 
-## Verify Genesis
-*This is an optional step. All validators are encouraged to verify the genesis file provided by the Foundation before starting up their nodes*
-
-You can verify the authenticity of the final genesis by performing the following:
-1. Copy all genesis transactions [here](https://github.com/certikfoundation/testnet/tree/master/shentu-rts/gentx) to your `<certik_home>`. Note `<certik_home>` defaults to `~/.certikd`
-2. Collect Gen-Tx's
-    ```
-    $ certikd collect-gentxs --home <certik_home>
-    ```
-3. Check if the shasum matches
-    ```
-    $ shasum ~/.certikd/config/genesis.json
-    909a79d4a795e1c8d343480a71578ad60253588  /home/ubuntu/.certikd/config/genesis.json
-    ```
-
 ## Seed Nodes
 List of seed nodes:
 ```
