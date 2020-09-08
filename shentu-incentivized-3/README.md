@@ -19,7 +19,7 @@ certikd export --for-zero-height --height 615000 > genesis_old.json
 ```
  5. Migrate the new genesis file <b>from the new certikd binary</b> using the following command:
 ```
-certikd migrate genesis_old.json --chain-id=shentu-incentivized-3 > genesis.json
+certikd migrate genesis_old.json --chain-id=shentu-incentivized-3 --genesis-time=2020-09-08T00:00:00Z > genesis.json
 ```
  6. Make sure to terminate any running certikd process. Copy the new genesis file to certikd config directory (by default `$HOME/.certikd/config/genesis.json`).
  7. run the following command:
