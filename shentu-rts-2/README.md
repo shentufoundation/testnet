@@ -13,14 +13,14 @@ Caution: make sure you are using the correct certikd binary when following the i
  1. Download relevant binaries according to your OS.
  2. Wait until the upgrade height is reached (209900).
  3. Get the new genesis time using the following command (note you need have `jq` installed beforehand).
-   1. for Linux:
-      ```
-      time=$(certikcli query block 209900 | jq -r '.block["header"]["time"]') && TZ=UTC date -d "$time +60 min" +"%Y-%m-%dT%H:%M:%SZ"
-      ```
-   2. for macOS:
-      ```
-      certikcli query block 209900 | jq -r '.block["header"]["time"]'|xargs -0 date -v +60M -j -f "%Y-%m-%dT%H:%M:%S" +"%Y-%m-%dT%H:%M:%SZ"
-      ```
+    1. for Linux:
+       ```
+       time=$(certikcli query block 209900 | jq -r '.block["header"]["time"]') && TZ=UTC date -d "$time +60 min" +"%Y-%m-%dT%H:%M:%SZ"
+       ```
+    2. for macOS:
+       ```
+       certikcli query block 209900 | jq -r '.block["header"]["time"]'|xargs -0 date -v +60M -j -f "%Y-%m-%dT%H:%M:%S" +"%Y-%m-%dT%H:%M:%SZ"
+       ```
  4. terminate all running certikd process. Using the new certikd binary, run the following command:
     ```
     certikd export --for-zero-height --height 209900 > genesis_old.json
