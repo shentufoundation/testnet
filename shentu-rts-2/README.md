@@ -6,7 +6,7 @@ Caution: make sure you are using the correct certikd binary when following the i
 
 <b>Make sure you are using the new binary from step 5.</b>
 
-![Alt text](https://github.com/certikfoundation/testnet/blob/master/flowchart.png?raw=true "Title")
+![Alt text](https://github.com/certikfoundation/testnet/blob/master/shentu-rts-2/flowchart.png?raw=true "Title")
 
  1. Download relevant binaries according to your OS.
  2. Wait until the upgrade height is reached (209900).
