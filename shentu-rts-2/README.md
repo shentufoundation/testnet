@@ -12,7 +12,7 @@ Caution: make sure you are using the correct certikd binary when following the i
 
  1. Download relevant binaries according to your OS.
  2. Wait until the upgrade height is reached (209900).
- 3. Get the new genesis time using the following command.
+ 3. Get the new genesis time using the following command (note you need have `jq` installed beforehand).
     ```
     time=$(certikcli query block 209900 | jq -r '.block["header"]["time"]') && TZ=UTC date -d "$time +60 min" +"%Y-%m-%dT%H:%M:%SZ"
     ```
