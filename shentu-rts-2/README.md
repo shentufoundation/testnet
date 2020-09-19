@@ -1,5 +1,5 @@
 # CertiK shentu-rts-2 Testnet Upgrade #
- 1. <b>The upgrade height is planned to be 224300, around 18:00 EDT (22:00 UTC) 09-21-2020.</b> 
+ 1. <b>The upgrade height is planned to be 224300, around 18:00 EDT (22:00 UTC) 09-22-2020.</b> 
 
 # How to Upgrade your node #
 Caution: make sure you are using the correct certikd binary when following the instructions. from step 5, you should use the new certikd binary.
