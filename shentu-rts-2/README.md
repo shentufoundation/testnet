@@ -37,6 +37,6 @@ Note that you can skip 3~5 by waiting out and downloading the new official genes
 
 The chain will not start until the genesis time. Once you are done setting things up and started certikd process, wait until the genesis time is reached in UTC to see new blocks being produced.
 
-<b>Make sure you are using the new binary after step 2.</b>
+<b>Make sure you are using the new binary after step 5.</b>
 
 Future upgrade to shentu-rts-3 will be announced soon.
