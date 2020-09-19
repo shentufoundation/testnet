@@ -1,5 +1,5 @@
 # CertiK shentu-rts-2 Testnet Upgrade #
- 1. <b>The upgrade height is planned to be 209900, around 18:00 EDT (22:00 UTC) 09-21-2020.</b> 
+ 1. <b>The upgrade height is planned to be 224300, around 18:00 EDT (22:00 UTC) 09-21-2020.</b> 
 
 # How to Upgrade your node #
 Caution: make sure you are using the correct certikd binary when following the instructions. from step 5, you should use the new certikd binary.
@@ -11,19 +11,19 @@ Caution: make sure you are using the correct certikd binary when following the i
 </p>
 
  1. Download relevant binaries according to your OS.
- 2. Wait until the upgrade height is reached (209900).
+ 2. Wait until the upgrade height is reached (224300).
  3. Get the new genesis time using the following command (note you need have `jq` installed beforehand).
     1. for Linux:
        ```
-       time=$(certikcli query block 209900 | jq -r '.block["header"]["time"]') && TZ=UTC date -d "$time +60 min" +"%Y-%m-%dT%H:%M:%SZ"
+       time=$(certikcli query block 224300 | jq -r '.block["header"]["time"]') && TZ=UTC date -d "$time +60 min" +"%Y-%m-%dT%H:%M:%SZ"
        ```
     2. for macOS:
        ```
-       certikcli query block 209900 | jq -r '.block["header"]["time"]'|xargs -0 date -v +60M -j -f "%Y-%m-%dT%H:%M:%S" +"%Y-%m-%dT%H:%M:%SZ"
+       certikcli query block 224300 | jq -r '.block["header"]["time"]'|xargs -0 date -v +60M -j -f "%Y-%m-%dT%H:%M:%S" +"%Y-%m-%dT%H:%M:%SZ"
        ```
  4. terminate all running certikd process. Using the new certikd binary, run the following command:
     ```
-    certikd export --for-zero-height --height 209900 > genesis_old.json
+    certikd export --for-zero-height --height 224300 > genesis_old.json
     ```
  5. Migrate the new genesis file using the following command, where <genesis_time> refers to the one you retrieved above in step 3:
     ```
