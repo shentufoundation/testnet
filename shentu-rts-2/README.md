@@ -39,4 +39,11 @@ The chain will not start until the genesis time. Once you are done setting thing
 
 <b>Make sure you are using the new binary after step 5.</b>
 
+```
+shasum genesis.json
+48c9257554b6f489d8facb3a9cd3f67974792cbf  genesis.json
+sha256sum genesis.json
+812ffce25cf38daf693903dbeee760f98ed2425ddb3187eb3f4d8da09cbe6413  genesis.json
+```
+
 Future upgrade to shentu-rts-3 will be announced soon.
