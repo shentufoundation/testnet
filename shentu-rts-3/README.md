@@ -6,7 +6,7 @@
 
 <b>Make sure you are using the new binary from step 5.</b>
 
- 1. Download relevant binaries according to your OS. The version <b>should be</b> 0.13.5 (to be published in the )
+ 1. Download relevant binaries according to your OS. The version <b>should be</b> 0.13.5 (to be published in https://github.com/certikfoundation/shentu)
  2. Wait until the upgrade height is reached (28200).
  4. terminate all running certikd process. Using the new certikd binary, run the following command:
     ```
