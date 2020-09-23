@@ -21,7 +21,7 @@ Caution: make sure you are using the correct certikd binary when following the i
        ```
        certikcli query block 224300 | jq -r '.block["header"]["time"]'|xargs -0 date -v +60M -j -f "%Y-%m-%dT%H:%M:%S" +"%Y-%m-%dT%H:%M:%SZ"
        ```
- 4. terminate all running certikd process. Using the new certikd binary, run the following command:
+ 4. terminate all running certikd process. Using the old certikd binary, run the following command:
     ```
     certikd export --for-zero-height --height 224300 > genesis_old.json
     ```
