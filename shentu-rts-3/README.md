@@ -6,13 +6,13 @@
 
 <b>Make sure you are using the new binary from step 5.</b>
 
- 1. Download relevant binaries according to your OS. The version <b>should be</b> 0.13.5 (to be published in the )
+ 1. Download relevant binaries according to your OS. The version <b>should be</b> 0.13.5 (to be published in https://github.com/certikfoundation/shentu)
  2. Wait until the upgrade height is reached (28200).
  4. terminate all running certikd process. Using the new certikd binary, run the following command:
     ```
     certikd export --for-zero-height --height 28200 > genesis_old.json
     ```
- 5. Migrate the new genesis file using the following command, where <genesis_time> refers to the one you retrieved above in step 3:
+ 5. Migrate the new genesis file using the following command:
     ```
     certikd migrate genesis_old.json --chain-id=shentu-rts-3 --genesis-time=2020-09-22T23:23:39Z > genesis.json
     ```
