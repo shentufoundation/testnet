@@ -5,7 +5,7 @@
 <b>Caution: make sure you are using the correct certikd binary when following the instructions. from step 5, you should use the new certikd binary.</b>
 
 <b>Make sure you are using the new binary from step 5.</b>
-
+## Note: due to a genesis incompatibility, you cannot generate the genesis on your own. Please download the genesis uploaded here and skip steps 4~5</b> ##
  1. Download relevant binaries according to your OS. The version <b>should be</b> 0.13.5 (to be published in https://github.com/certikfoundation/shentu)
  2. Wait until the upgrade height is reached (28200).
  4. terminate all running certikd process. Using the new certikd binary, run the following command:
