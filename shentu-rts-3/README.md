@@ -23,3 +23,9 @@
 Note that you can skip 3~5 by waiting out and downloading the new official genesis file, planned to be updated here.
 
 <b>Make sure you are using the new binary after step 5.</b>
+```
+shasum genesis.json
+0c62e919bd2acd440cdaa7b93f10e0348482af14  genesis.json
+sha256sum genesis.json
+7664c9ef8a0abf0475ac8c3df6266422aa2471a7fac2054988d39817bad68de4  genesis.json
+```
