@@ -12,7 +12,7 @@
     ```
     certikd export --for-zero-height --height 28200 > genesis_old.json
     ```
- 5. Migrate the new genesis file using the following command, where <genesis_time> refers to the one you retrieved above in step 3:
+ 5. Migrate the new genesis file using the following command:
     ```
     certikd migrate genesis_old.json --chain-id=shentu-rts-3 --genesis-time=2020-09-22T23:23:39Z > genesis.json
     ```
