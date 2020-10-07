@@ -1,9 +1,5 @@
 [Create Test Account](#create-test-accounts), [Download Latest Release](https://github.com/certikfoundation/testnet/releases/)
 
-<b>Note the binaries released in the releases can have a slightly different version than the release tags
-  
-  (release 0.13.4 having version 0.13-9-xxxx for `certikd version` or `certikcli version`)</b>
-
 # CertiK Chain Testnet
 
 This repository hosts the `CertiK Chain` implementation and testnet information. More documents and details will be released here over the progress of testnet.
