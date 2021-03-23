@@ -1,9 +1,13 @@
 ## How to join Yulei Testnet
 
 1. Download v1.4.x binary https://github.com/certikfoundation/shentu/releases/tag/v1.4.0.0310
-2. Download data files at https://yuleidatabucket.s3.amazonaws.com/data.zip
-3. Extract the zip file, and move the contents into the certikd data directory (by default ~/.certikd/data).
-1. Download the final genesis
+2. Initialize certikd directories via command (--home flag optional):
+   ```bash
+   certikd init --home <home_dir>
+   ```
+3. Download data files at https://yuleidatabucket.s3.amazonaws.com/data.zip
+4. Extract the zip file, and move the contents into the certikd data directory (by default ~/.certikd/data).
+5. Download the final genesis
     ```bash
     wget https://raw.githubusercontent.com/certikfoundation/testnet/master/yulei-1/genesis.json .
     ```
