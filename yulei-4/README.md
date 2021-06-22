@@ -1,8 +1,10 @@
-## How to join Yulei Testnet
+## How to join Yulei-4 Testnet
 
-1. Download v1.4.x binary https://github.com/certikfoundation/shentu/releases/tag/v1.4.0.0310
+1. Check out the correct commit in the [repo](https://github.com/certikfoundation/shentu) and build the binary.
+The current binary was built from the commit `714ecf79915cc3498a52dbef6d2fc18aa7891187`.
+
 2. Initialize certikd directories via command (--home flag is optional):
-   ```bash 
+   ```bash
    certik init <moniker> --chain-id yulei-4 --home <home_dir>
    ```
 3. Download the final genesis
