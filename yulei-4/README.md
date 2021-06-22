@@ -3,7 +3,7 @@
 1. Check out the correct commit in the [repo](https://github.com/certikfoundation/shentu) and build the binary.
 The current binary was built from the commit `714ecf79915cc3498a52dbef6d2fc18aa7891187`.
 
-2. Initialize certikd directories via command (--home flag is optional):
+2. Initialize certik directories via command (--home flag is optional):
    ```bash
    certik init <moniker> --chain-id yulei-4 --home <home_dir>
    ```
