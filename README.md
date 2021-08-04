@@ -41,11 +41,15 @@ The full stage of testnet starts when the open beta stage exits with all testnet
 
 During this stage, testnet backend and frontend are exepcted to receive on-demand updates. Branching instead of re-deployment will be preferred when solving chain divergence. The validator set size will be large (e.g., no more than 100).
 
-## Incentivized Testnet & Validator Competition Program (**CURRENT STAGE**)
+## Incentivized Testnet & Validator Competition Program (COMPLETED)
 
 The Incentivized Testnet will consist of various kinds of smart contracts, governance, and certification transactions. Anyone can participate to earn the rewards.
 
 Moreover, it will run parallel with the validator program "Raise the Stakes" for some time from September 7th. The Validator Program will consist of many different tasks for the node runners to earn rewards.
+  
+## Yulei Testnets (**Current Stage**)
+  
+With the launch of Mainnet, CertiK Foundation is managing a pair testnet with the `shentu` mainnet called `yulei`. The numbering of the chain-id's will look similar with the mainnet's chain-id: yulei-1 corresponding to shentu-1 and so on. When there is a chain-id chancing upgrade on shentu mainnet, a mock run will take place on Yulei beforehand to qualify the upgrade. You can join Yulei and request for test tokens on the [CertiK Discord](https://discord.com/invite/Q5a68GCY9Z).
 
 # How to Participate
 
@@ -56,6 +60,8 @@ The [CertiK Chain Explorer](https://explorer.certik.foundation/) is public acces
 The [DeepWallet](https://wallet.certik.foundation/) is public accessible and can be used to manage chain accounts, including CTK storage, staking, transfer, and voting, as well as smart contracts deploy and invocation.
 
 The [Certik Chain User Forum](https://forum.certik.foundation/categories) is a public forum for chain announcements and discussions.
+
+The [CertiK Discord](https://discord.com/invite/Q5a68GCY9Z) is a public discord channel to talk about CertiK chain.
 
 For non-public chain questions and discussions, please email to chain@certik.org
 
