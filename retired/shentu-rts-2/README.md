@@ -7,7 +7,7 @@ Caution: make sure you are using the correct certikd binary when following the i
 <b>Make sure you are using the new binary from step 5.</b>
 
 <p align="center">
- <img src="https://github.com/certikfoundation/testnet/blob/master/shentu-rts-2/flowchart.png" width="450" height="400">
+ <img src="https://github.com/certikfoundation/testnet/blob/master/retired/shentu-rts-2/flowchart.png" width="450" height="400">
 </p>
 
  1. Download relevant binaries according to your OS.
