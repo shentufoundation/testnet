@@ -5,7 +5,7 @@
    ```bash
    certikd init --home <home_dir>
    ```
-3. Download data files at https://yuleidatabucket.s3.amazonaws.com/data.zip
+3. Download data files at https://yuleidatabucket.s3.amazonaws.com/data.tar
 4. Extract the zip file, and move the contents into the certikd data directory (by default ~/.certikd/data).
 5. Download the final genesis
     ```bash
