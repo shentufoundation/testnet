@@ -1,31 +1,7 @@
-## How to join Yulei-2 Testnet
+## `yulei-2` is a resulting chain from an upgrade in `yulei-1`. To know how to participate in the upgrade that will happen in 08/24/2021 (or blockheight 4960000 in `yulei-1`), please refer to the [upgrade documentation](https://github.com/certikfoundation/testnet/tree/master/yulei-2/upgrade.md).
 
-1. Check out the correct commit in the [repo](https://github.com/certikfoundation/shentu) and build the binary.
-The current binary was built from the commit `6405cfd9b62b7a797045e736daae5ff3844f785a`.
+### To join `yulei-1` and possibly participate in the mock upgrade to `yulei-2`, please refer to [yulei-1 README](https://github.com/certikfoundation/testnet/tree/master/yulei-1/README.md)
 
-2. Initialize certik directories via command (--home flag is optional):
-   ```bash
-   certik init <moniker> --chain-id yulei-2 --home <home_dir>
-   ```
-3. Download the final genesis
-    ```bash
-    wget https://raw.githubusercontent.com/certikfoundation/testnet/master/yulei-2/genesis.json
-    ```
-4. Copy the final genesis file to your certikd config directory
-    ```
-    $ cp genesis.json $HOME/.certik/config/genesis.json
-    ```
-    Check if you have the correct genesis
-    ```
-    $ sha256sum ~/.certik/config/genesis.json
-    852963435bf5f9da9ee24881cdf104b148993f016ce339ab47217e25e7d457ec  genesis.json
-    ```
-5. Edit `config.toml` in the config directory (`$HOME/.certik/config`) to include the seeds
-    ```
-    seeds = "09a0005c2722bc548e5f81969afc1745c42366cd@34.201.6.246:26656,c4d7166d53ee6418345fd76379a1a7a8189d4599@3.91.154.118:26656,75c2c5da9cc2567cf57cb5435943c5366386b93d@18.234.254.139:26656"
-    ```
-6. Reset and start certik process.
-    ```
-    certik unsafe-reset-all
-    certik start
-    ```
+## How to Join `yulei-2` Public Testnet:
+
+### Currently `yulei-2` testnet has not started yet. The data files and instructions needed to hop into `yulei-2` testnet will be uploaded here after the launch.
