@@ -10,6 +10,16 @@ The current version of the testnet is Incentivized Testnet, which anyone can par
 
 As testnet moves through its various stages, CertiK Foundation expects to provide ample opportunities for active members of the community to be rewarded for their contributions.
 
+## Join Shentu Chain Community
+
+[Website](https://www.certik.foundation/)
+
+[Telegram](https://t.me/certikfoundation)
+
+[Discord](https://discord.gg/Q5a68GCY9Z)
+
+[Twitter](https://twitter.com/certikorg)
+
 ## Timeline
 
 * Closed Alpha 1.0 (July 22, 2019)
