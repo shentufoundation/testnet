@@ -72,11 +72,11 @@ Cross check your genesis hash with other peers (other validators) in the chat ro
     name: certik
     server_name: certik
     version: 2.0.0
-    commit: d616107ef56725c17c710eba41342118ca1b6e1b
+    commit: 73aef0cf202c6107b4fc3fcfe803a83196d327d4
     build_tags: netgo,ledger
     ...
    ```
-    The version/commit hash of CertIK v2.0.0: `d616107ef56725c17c710eba41342118ca1b6e1b`
+    The version/commit hash of CertIK v2.0.0: `73aef0cf202c6107b4fc3fcfe803a83196d327d4`
 
 1. Migrate exported state from the current v1.4.0 version to the new v2.0.0 version <b>WITH THE v2.0.0 BINARY</b>:
 
