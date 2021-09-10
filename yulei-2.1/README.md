@@ -29,7 +29,7 @@ Based on [cosmos-sdk-state-sync-guide](https://blog.cosmos.network/cosmos-sdk-st
     ```
 
 The node will start the peer exchange protocol once you start the certik daemon, and will soon start to sync using the snapshot.
-The snapshots are taken every 1000 blocks on both nodes.
+The snapshots are taken every 500 blocks on both nodes.
 
 Pros:
  - Less chain data size (only stored from the snapshot height)
