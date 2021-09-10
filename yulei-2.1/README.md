@@ -2,7 +2,7 @@
  1. Use the state snapshot sync below with a normal v2.2.0 binary. (Unstable)
  1. download the binary located [here](https://github.com/certikfoundation/testnet/raw/master/yulei-2.1/certik) and start syncing with the seeds and genesis.
 
-Due to validator set matching in the init chainer, normal binary with genesis + seeds initialization will result in a panic. The second method's binary disabled a check during initializing genesis to bypass that error, and the binary is identical with the normal 2.2.0 binary.
+Due to validator set matching in the init chainer, normal binary with genesis + seeds initialization will result in a panic. The second method's binary disabled a check during initializing genesis to bypass that error, and the binary is identical with the normal 2.2.0 binary otherwise.
 
 # State Sync using Trusted Data Snapshots
 
