@@ -1,3 +1,8 @@
+## To sync to yulei-2.1 network you can either:
+ 1. Use the state snapshot sync below (recommend) with a normal v2.2.0 binary.
+ 1. download the binary located [here](https://github.com/certikfoundation/testnet/raw/master/yulei-2.1/certik) and start syncing with the seeds and genesis.
+Due to validator set matching in the init chainer, normal binary with genesis + seeds initialization will result in a panic.
+
 # State Sync using Trusted Data Snapshots
 
 Based on [cosmos-sdk-state-sync-guide](https://blog.cosmos.network/cosmos-sdk-state-sync-guide-99e4cf43be2f)
