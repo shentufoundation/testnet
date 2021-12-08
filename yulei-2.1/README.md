@@ -4,7 +4,11 @@
 
 Due to validator set matching in the init chainer, normal binary with genesis + seeds initialization will result in a panic. The second method's binary disabled a check during initializing genesis to bypass that error, and the binary is identical with the normal 2.2.0 binary otherwise.
 
-# State Sync using Trusted Data Snapshots
+## Upgrade on Yulei-2.1
+
+There is an upgrade on Yulei-2.1 network at height `6656700`. Switch to binary version `v2.3.0-rc2` at height `6656700` to proceed with the upgrade.
+
+# State Sync using Trusted Data Snapshots (Unstable)
 
 Based on [cosmos-sdk-state-sync-guide](https://blog.cosmos.network/cosmos-sdk-state-sync-guide-99e4cf43be2f)
 
@@ -38,3 +42,4 @@ Pros:
 
 Cons:
  - Need to trust the RPC endpoint for the height and block hash
+
