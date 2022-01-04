@@ -6,7 +6,7 @@ Due to validator set matching in the init chainer, normal binary with genesis + 
 
 ## Upgrade on Yulei-2.1
 
-There is an upgrade on Yulei-2.1 network at height `6656700`. Switch to binary version `v2.3.0-rc2` at height `6656700` to proceed with the upgrade.
+There is an upgrade on Yulei-2.1 network at height `6656700`. Switch to binary version `v2.3.0` at height `6656700` to proceed with the upgrade.
 
 # State Sync using Trusted Data Snapshots (Unstable)
 
