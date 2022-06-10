@@ -4,9 +4,9 @@
 
 Due to validator set matching in the init chainer, normal binary with genesis + seeds initialization will result in a panic. The second method's binary disabled a check during initializing genesis to bypass that error, and the binary is identical with the normal 2.2.0 binary otherwise. Make sure your certik data directory is clean (or you can reset it through `certik unsafe-reset-all`
 
-## Upgrade on Yulei-2.1
+## Upgrades on Yulei-2.1
 
-There is an upgrade on Yulei-2.1 network at height `6656700`. Switch to binary version `v2.3.0` at height `6656700` to proceed with the upgrade.
+Refer to the upgrades section for detailed information on planned/finished software upgrades on yulei-2.1 network.
 
 # State Sync using Trusted Data Snapshots (Unstable)
 
