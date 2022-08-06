@@ -1,4 +1,4 @@
-[Create Test Account](#create-test-accounts), [Download Latest Release](https://github.com/certikfoundation/chain/releases/)
+[Create Test Account](#create-test-accounts), [Download Latest Release](https://github.com/certikfoundation/shentu/releases/)
 
 # CertiK Chain Testnet
 
@@ -10,6 +10,16 @@ The current version of the testnet is Incentivized Testnet, which anyone can par
 
 As testnet moves through its various stages, CertiK Foundation expects to provide ample opportunities for active members of the community to be rewarded for their contributions.
 
+## Join Shentu Chain Community
+
+[Website](https://www.certik.foundation/)
+
+[Telegram](https://t.me/certikfoundation)
+
+[Discord](https://discord.gg/Q5a68GCY9Z)
+
+[Twitter](https://twitter.com/certikorg)
+
 ## Timeline
 
 * Closed Alpha 1.0 (July 22, 2019)
@@ -17,6 +27,7 @@ As testnet moves through its various stages, CertiK Foundation expects to provid
 * Open Beta 3.0 (November 27, 2019)
 * Full Testnet 4.0 (March 31, 2020)
 * Incentivized Testnet 1.0 (July 15, 2020)
+* Validator Program <Raise the Stakes> (September 07, 2020)
 * ...
 * Mainnet
 
@@ -40,9 +51,15 @@ The full stage of testnet starts when the open beta stage exits with all testnet
 
 During this stage, testnet backend and frontend are exepcted to receive on-demand updates. Branching instead of re-deployment will be preferred when solving chain divergence. The validator set size will be large (e.g., no more than 100).
 
-## Incentivized Testnet (**CURRENT STAGE**)
+## Incentivized Testnet & Validator Competition Program (COMPLETED)
 
-The Incentivized Testnet will consists of various kinds of smart contracts, governance, and certification transactions. Anyone can participate to earn the rewards.
+The Incentivized Testnet will consist of various kinds of smart contracts, governance, and certification transactions. Anyone can participate to earn the rewards.
+
+Moreover, it will run parallel with the validator program "Raise the Stakes" for some time from September 7th. The Validator Program will consist of many different tasks for the node runners to earn rewards.
+  
+## Yulei Testnets (**Current Stage**)
+  
+With the launch of Mainnet, CertiK Foundation is managing a pair testnet with the `shentu` mainnet called `yulei`. The numbering of the chain-id's will look similar with the mainnet's chain-id: yulei-1 corresponding to shentu-1 and so on. When there is a chain-id chancing upgrade on shentu mainnet, a mock run will take place on Yulei beforehand to qualify the upgrade. You can join Yulei and request for test tokens on the [CertiK Discord](https://discord.com/invite/Q5a68GCY9Z).
 
 # How to Participate
 
@@ -53,6 +70,8 @@ The [CertiK Chain Explorer](https://explorer.certik.foundation/) is public acces
 The [DeepWallet](https://wallet.certik.foundation/) is public accessible and can be used to manage chain accounts, including CTK storage, staking, transfer, and voting, as well as smart contracts deploy and invocation.
 
 The [Certik Chain User Forum](https://forum.certik.foundation/categories) is a public forum for chain announcements and discussions.
+
+The [CertiK Discord](https://discord.com/invite/Q5a68GCY9Z) is a public discord channel to talk about CertiK chain.
 
 For non-public chain questions and discussions, please email to chain@certik.org
 
@@ -66,16 +85,16 @@ The latest chain node binary and CLI tool binary, as well as genesis and sample 
 
 ### CLI Tool Configuration
 
-With `certikcli` one can create test account key pairs and interact with the testnet. Its configuration needs to be properly set as the following.
+With `certik` one can create test account key pairs and interact with the testnet. Its configuration needs to be properly set as the following.
 
 ```
-rm -rf ~/.certikcli
-certikcli config chain-id shentu-incentivized
-certikcli config node tcp://<full node>:<port>
-certikcli config trust-node true
+rm -rf ~/.certik
+certik config chain-id <chain-id>
+certik config node tcp://<full node>:<port>
+certik config trust-node true
 ```
 
-`certikcli` runs on Linux, Windows, and MacOS.
+`certik` runs on Linux, Windows, and MacOS.
 
 ### Create Test Accounts
 
@@ -86,7 +105,7 @@ To use the `CertiK Chain` and do transactions on the chain, one need to first cr
 First, create an account address and public / private key pair on your computer. In interactions with the chain, public address and key are used frequently. The private key is stored in your local computer and is needed to sign your transaction before submitting.
 
 ```
-$ certikcli keys add <account name>
+$ certik keys add <account name>
 Enter a passphrase to encrypt your key to disk:
 Repeat the passphrase:
 
@@ -108,17 +127,17 @@ Please note that the testnet may be restarted occasionally, so you may need to r
 
 It is possible to run your own full nodes and connect the CLI tool to them. In the next section you will be shown how to convert your full nodes into validator nodes.
 
-With `certikd` one can run full nodes of the `CertiK Chain`. Its configuration needs to be properly initialized.
+With `certik` one can run full nodes of the `CertiK Chain`. Its configuration needs to be properly initialized.
 
 ```
-rm -rf ~/.certikd
-certikd init <node name>
+rm -rf ~/.certik
+certik init <node name>
 ```
 
 The full node needs to connect some existing nodes of the chain, which can be obtained from the mailing list. Open the node configuration file to edit them.
 
 ```
-vi ~/.certikd/config/config.toml
+vi ~/.certik/config/config.toml
 ```
 
 Edit the following lines.
@@ -132,13 +151,13 @@ seeds = "f4678480e4b7f1daee8ff47e6265954f8b57291d@54.234.180.96:26656,f6764b2a92
 Then copy the testnet genesis JSON file to the node configuration directory. The latest genesis file can be found [here](https://github.com/certikfoundation/chain/blob/master/genesis.json). Release-specific genesis file can be found in the [release download](https://github.com/certikfoundation/chain/releases/).
 
 ```
-cp genesis.json ~/.certikd/config
+cp genesis.json ~/.certik/config
 ```
 
 Start the full node. Note that it might take a while for the new full node to catch up on the chain history.
 
 ```
-certikd start
+certik start
 ```
 
 To connect to the full node from CLI tool running on the same machine, use `tcp://localhost:26657`.
@@ -154,7 +173,7 @@ Before converting the above full node into a validator, it is required to get th
 First, run the following on on your node instance.
 
 ```
-certikd tendermint show-validator
+certik tendermint show-validator
 ```
 
 Then send the pubkey to chain@certik.org with title "request to certify validator node" and optionally your reasoning on why this node should be approved to become a validator node (typically in terms of capacity, connectivity, maintenance, and security).
@@ -164,9 +183,9 @@ Within 24 hours, CertiK will get back to you with either "certified" or "rejecte
 Once receiving the "certified" message, you can proceed to convert your full node to become a validator node by following the instruction below.
 
 ```
-certikcli tx staking create-validator \
+certik tx staking create-validator \
   --amount=<amount of uctk to delegate to the validator>uctk \
-  --pubkey=$(certikd tendermint show-validator) \
+  --pubkey=$(certik tendermint show-validator) \
   --moniker=<name of the validator, which can be diffferent from account name> \
   --commission-rate="0.10" \
   --commission-max-rate="0.20" \
@@ -184,53 +203,53 @@ If the transaction is successful, your validator should appear in either the `Ac
 
 ### Queries
 
-`certikcli` supports many query sub-commands. Below are some common examples. More details can be found in the command help printout.
+`certik` supports many query sub-commands. Below are some common examples. More details can be found in the command help printout.
 
 To query the current validator set
 
 ```
-certikcli query staking validators
+certik query staking validators
 ```
 
 To query a block
 
 ```
-certikcli query block <height>
+certik query block <height>
 ```
 
 To query a transaction
 
 ```
-certikcli query tx <transaction hash>
+certik query tx <transaction hash>
 ```
 
 To query the status of an account
 
 ```
-certikcli query account <address>
+certik query account <address>
 ```
 
 ### Transactions
 
-`certikcli` also supports many transaction subcommands. Below are some common examples. More details can be found in the command help printout.
+`certik` also supports many transaction subcommands. Below are some common examples. More details can be found in the command help printout.
 
 To transfer CTK from one account to another.
 
 ```
-certikcli tx send <sender address> <recipent address> <amount of uctk> --fees 5000uctk
+certik tx send <sender address> <recipent address> <amount of uctk> --fees 5000uctk
 ```
 
 For validators, you can unjail yourself by making an unjail transaction if you are jailed.
 
 ```
-certikcli tx slashing unjail --from <validator operator name> --fees=5000uctk
+certik tx slashing unjail --from <validator operator name> --fees=5000uctk
 ```
 
 ### CVM Smart Contracts
 
 `CertiK VM`, or CVM, is a core component of the `CertiK Chain`. CVM is compatible with EVM with security-focused extensions. Smart Contracts written in Solidity can be deployed and invoked on the CertiK Chain.
 
-`certikcli` assumes Solidity compiler `solc` is in the path. See [here](https://solidity.readthedocs.io/en/latest/installing-solidity.html) for installation instructions.
+`certik` assumes Solidity compiler `solc` is in the path. See [here](https://solidity.readthedocs.io/en/latest/installing-solidity.html) for installation instructions.
 
 To deploy a simple smart contract from file `simple.sol'
 
@@ -250,7 +269,7 @@ contract SimpleStorage {
     }
 }
 
-$ certikcli  tx cvm deploy simple.sol --from <deployer address> --fees 5000uctk
+$ certik  tx cvm deploy simple.sol --from <deployer address> --fees 5000uctk
 ...
 txhash: <transaction hash>
 ...
@@ -258,7 +277,7 @@ txhash: <transaction hash>
 To get the deployed contract address
 
 ```
-$ certikcli query tx <transaction hash>
+$ certik query tx <transaction hash>
 ...
     - key: new-contract-address
       value: <deployed contract address>
@@ -268,7 +287,7 @@ $ certikcli query tx <transaction hash>
 To inspect contract code bytes deployed
 
 ```
-certikcli query cvm code <contract address>
+certik query cvm code <contract address>
 6080604052348015600F57600080FD5B506004361060325760003560E01C806360FE47B114603757
 80636D4CE63C146062575B600080FD5B606060048036036020811015604B57600080FD5B81019080
 80359060200190929190505050607E565B005B60686088565B604051808281526020019150506040
@@ -279,13 +298,13 @@ certikcli query cvm code <contract address>
 To call SimpleStorage.set(123)
 
 ```
-certikcli tx cvm call <contract address> set 123 --from <caller address> --fees 5000uctk
+certik tx cvm call <contract address> set 123 --from <caller address> --fees 5000uctk
 ```
 
 To call SimpleStorage.get()
 
 ```
-$ certikcli tx cvm call <contract address> get --from <caller address> --fees 5000uctk
+$ certik tx cvm call <contract address> get --from <caller address> --fees 5000uctk
 ...
 txhash: <transaction hash>
 ...
@@ -294,7 +313,7 @@ txhash: <transaction hash>
 To verify the read out data is indeed 123 (0x7b)
 
 ```
-certikcli query tx <transaction hash>
+certik query tx <transaction hash>
 ...
 data: 000000000000000000000000000000000000000000000000000000000000007B
 ...
@@ -305,56 +324,13 @@ data: 000000000000000000000000000000000000000000000000000000000000007B
 To start a local RESTful server connected to the full node connected above
 
 ```
-certikcli rest-server
+certik rest-server
 ```
+
+you can look through the swagger documents through `localhost:1317/swagger/` while the `certik rest-server` is running.
 
 For example, to query the current validators
 
 ```
 curl -s http://localhost:1317/staking/validators
-```
-
-Here are some query endpoints.
-
-```
-/auth/accounts/{address}
-/bank/balances/{address}
-/blocks/latest
-/blocks/{height}
-/cvm/abi/{address}
-/cvm/code/{address}
-/cvm/storage/{address}/{key}
-/distribution/community_pool
-/distribution/delegators/{delegatorAddr}/rewards
-/distribution/delegators/{delegatorAddr}/rewards/{validatorAddr}
-/distribution/delegators/{delegatorAddr}/withdraw_address
-/distribution/parameters
-/distribution/validators/{validatorAddr}
-/distribution/validators/{validatorAddr}/outstanding_rewards
-/distribution/validators/{validatorAddr}/rewards
-/node_info
-/node_version
-/slashing/parameters
-/slashing/signing_infos/page={page}&limit={limit}
-/slashing/validators/{validatorPubKey}/signing_info
-/staking/delegators/{delegatorAddr}/delegations
-/staking/delegators/{delegatorAddr}/delegations/{validatorAddr}
-/staking/delegators/{delegatorAddr}/txs
-/staking/delegators/{delegatorAddr}/unbonding_delegations
-/staking/delegators/{delegatorAddr}/unbonding_delegations/{validatorAddr}
-/staking/delegators/{delegatorAddr}/validators
-/staking/delegators/{delegatorAddr}/validators/{validatorAddr}
-/staking/parameters
-/staking/pool
-/staking/redelegations
-/staking/validators
-/staking/validators/{validatorAddr}
-/staking/validators/{validatorAddr}/delegations
-/staking/validators/{validatorAddr}/unbonding_delegations
-/syncing
-/txs
-/txs/{hash}
-/validatorsets/latest
-/validatorsets/{height}
-/version
 ```
