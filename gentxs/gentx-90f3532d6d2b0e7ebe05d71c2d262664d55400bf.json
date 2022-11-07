@@ -1,0 +1,46 @@
+{
+  "type": "cosmos-sdk/StdTx",
+  "value": {
+    "msg": [
+      {
+        "type": "cosmos-sdk/MsgCreateValidator",
+        "value": {
+          "description": {
+            "moniker": "kytzu",
+            "identity": "909A480D5643CCC5",
+            "website": "https://kytzu.com",
+            "security_contact": "",
+            "details": "Kytzu Validator Team"
+          },
+          "commission": {
+            "rate": "1.000000000000000000",
+            "max_rate": "1.000000000000000000",
+            "max_change_rate": "0.900000000000000000"
+          },
+          "min_self_delegation": "1",
+          "delegator_address": "certik1fkn6504rh0phcp4jj24u06hn7dafrfdz8fmg6y",
+          "validator_address": "certikvaloper1fkn6504rh0phcp4jj24u06hn7dafrfdzsalgn7",
+          "pubkey": "certikvalconspub1zcjduepqhc0jtqv788wfzp3czzyh9q6eamjmrkpxnm79vp40qnrjufqppwrq6884gn",
+          "value": {
+            "denom": "uctk",
+            "amount": "99000000000"
+          }
+        }
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas": "200000"
+    },
+    "signatures": [
+      {
+        "pub_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "AnqkGladNyUWSLG5hX/hkHK+xsNyWfaset7NMvyZKADZ"
+        },
+        "signature": "mjx+wtTRHsfeyi+aAgPxqd+zZV5Y7Z5oibwnXdBIyj4XcaJJIfJBl9TMiaaCRJfs2d/1QiVFNS/rXuuSRsAZ9A=="
+      }
+    ],
+    "memo": "90f3532d6d2b0e7ebe05d71c2d262664d55400bf@88.198.63.78:26656"
+  }
+}
