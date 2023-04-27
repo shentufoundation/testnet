@@ -14,10 +14,10 @@ Based on [cosmos-sdk-state-sync-guide](https://blog.cosmos.network/cosmos-sdk-st
 
 ##
 
- - 2 RPC endpoints: `3.239.220.130:26657,44.193.30.206:26657`
+ - 2 RPC endpoints: `44.199.242.245:26657,44.192.7.96:26657`
  
     ```
-    curl -s http://3.239.220.130:26657/block | jq -r '.result.block.header.height + "\n" + .result.block_id.hash'
+    curl -s http://44.199.242.245:26657/block | jq -r '.result.block.header.height + "\n" + .result.block_id.hash'
     <some_height>
     <some_hash>
     ```
@@ -27,7 +27,7 @@ Based on [cosmos-sdk-state-sync-guide](https://blog.cosmos.network/cosmos-sdk-st
     ```
     [statesync]
     enable = true
-    rpc_servers = "3.239.220.130:26657,44.193.30.206:26657"
+    rpc_servers = "44.199.242.245:26657,44.192.7.96:26657"
     trust_height = <some_height>
     trust_hash = "<some_hash>"
     trust_period = "336h"  # 2/3 of unbonding time
