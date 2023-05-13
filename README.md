@@ -1,24 +1,24 @@
 [Create Test Account](#create-test-accounts), [Download Latest Release](https://github.com/certikfoundation/shentu/releases/)
 
-# CertiK Chain Testnet
+# Shentu Chain Testnet
 
-This repository hosts the `CertiK Chain` implementation and testnet information. More documents and details will be released here over the progress of testnet.
+This repository hosts the `Shentu Chain` implementation and testnet information. More documents and details will be released here over the progress of testnet.
 
-`CertiK Chain` is the key component in CertiK's vision of building end-to-end secure and trustworthy infrastructure for the blockchain world. Here is a brief [introduction](https://medium.com/certik/introducing-the-certik-chain-26629248da3c) to the chain.
+`Shentu Chain` is the key component in Shentu Foundation's vision of building end-to-end secure and trustworthy infrastructure for the blockchain world. Here is a brief [introduction](https://medium.com/certik/introducing-the-certik-chain-26629248da3c) to the chain.
 
-The current version of the testnet is Incentivized Testnet, which anyone can participate to earn real CTK when we arrive at mainnet. The overall goal of testnet is to define and implement a majority of the `CertiK Chain` features and build a strong `CertiK Chain` developer and user community by providing opportunities to contribute to the chain design and development, to evaluate the chain's main features, and to develop smart contracts and other usage scenarios around the chain.
+The current version of the testnet is Incentivized Testnet, which anyone can participate to earn real CTK when we arrive at mainnet. The overall goal of testnet is to define and implement a majority of the `Shentu Chain` features and build a strong `Shentu Chain` developer and user community by providing opportunities to contribute to the chain design and development, to evaluate the chain's main features, and to develop smart contracts and other usage scenarios around the chain.
 
-As testnet moves through its various stages, CertiK Foundation expects to provide ample opportunities for active members of the community to be rewarded for their contributions.
+As testnet moves through its various stages, Shentu Foundation expects to provide ample opportunities for active members of the community to be rewarded for their contributions.
 
 ## Join Shentu Chain Community
 
-[Website](https://www.certik.foundation/)
+[Website](https://www.shentu.foundation/)
 
-[Telegram](https://t.me/certikfoundation)
+[Telegram](https://t.me/shentuchain)
 
 [Discord](https://discord.gg/Q5a68GCY9Z)
 
-[Twitter](https://twitter.com/certikorg)
+[Twitter](https://twitter.com/shentuchain)
 
 ## Timeline
 
@@ -59,15 +59,15 @@ Moreover, it will run parallel with the validator program "Raise the Stakes" for
   
 ## Yulei Testnets (**Current Stage**)
   
-With the launch of Mainnet, CertiK Foundation is managing a pair testnet with the `shentu` mainnet called `yulei`. The numbering of the chain-id's will look similar with the mainnet's chain-id: yulei-1 corresponding to shentu-1 and so on. When there is a chain-id chancing upgrade on shentu mainnet, a mock run will take place on Yulei beforehand to qualify the upgrade. You can join Yulei and request for test tokens on the [CertiK Discord](https://discord.com/invite/Q5a68GCY9Z).
+With the launch of Mainnet, Shentu Foundation is managing a pair testnet with the `shentu` mainnet called `yulei`. The numbering of the chain-id's will look similar with the mainnet's chain-id: yulei-1 corresponding to shentu-1 and so on. When there is a chain-id chancing upgrade on shentu mainnet, a mock run will take place on Yulei beforehand to qualify the upgrade. You can join Yulei and request for test tokens on the [Shentu Discord](https://discord.com/invite/Q5a68GCY9Z).
 
 # How to Participate
 
-`Certik Chain` is a project of the [CertiK Foundation](https://certik.foundation/).
+`Shentu Chain` is a project of the [Shentu Foundation](https://shentu.foundation/).
 
-The [CertiK Chain Explorer](https://explorer.certik.foundation/) is public accessible and can be used to query on various status of the chain on the web.
+The [Shentu Chain Explorer](https://explorer.shentu.foundation/) is public accessible and can be used to query on various status of the chain on the web.
 
-The [DeepWallet](https://wallet.certik.foundation/) is public accessible and can be used to manage chain accounts, including CTK storage, staking, transfer, and voting, as well as smart contracts deploy and invocation.
+The [DeepWallet](https://wallet.shentu.foundation/) is public accessible and can be used to manage chain accounts, including CTK storage, staking, transfer, and voting, as well as smart contracts deploy and invocation.
 
 The [Certik Chain User Forum](https://forum.certik.foundation/categories) is a public forum for chain announcements and discussions.
 
