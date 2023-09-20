@@ -1,10 +1,10 @@
-[Create Test Account](#create-test-accounts), [Download Latest Release](https://github.com/certikfoundation/shentu/releases/)
+[Create Test Account](#create-test-accounts), [Download Latest Release](https://github.com/shentufoundation/shentu/releases/)
 
 # Shentu Chain Testnet
 
 This repository hosts the `Shentu Chain` implementation and testnet information. More documents and details will be released here over the progress of testnet.
 
-`Shentu Chain` is the key component in Shentu Foundation's vision of building end-to-end secure and trustworthy infrastructure for the blockchain world. Here is a brief [introduction](https://medium.com/certik/introducing-the-certik-chain-26629248da3c) to the chain.
+`Shentu Chain` is the key component in Shentu Foundation's vision of building end-to-end secure and trustworthy infrastructure for the blockchain world.
 
 The current version of the testnet is Incentivized Testnet, which anyone can participate to earn real CTK when we arrive at mainnet. The overall goal of testnet is to define and implement a majority of the `Shentu Chain` features and build a strong `Shentu Chain` developer and user community by providing opportunities to contribute to the chain design and development, to evaluate the chain's main features, and to develop smart contracts and other usage scenarios around the chain.
 
@@ -69,43 +69,43 @@ The [Shentu Chain Explorer](https://explorer.shentu.foundation/) is public acces
 
 The [DeepWallet](https://wallet.shentu.foundation/) is public accessible and can be used to manage chain accounts, including CTK storage, staking, transfer, and voting, as well as smart contracts deploy and invocation.
 
-The [Certik Chain User Forum](https://forum.certik.foundation/categories) is a public forum for chain announcements and discussions.
+The [Shentu Chain User Forum](https://forum.shentu.foundation/categories) is a public forum for chain announcements and discussions.
 
-The [CertiK Discord](https://discord.com/invite/Q5a68GCY9Z) is a public discord channel to talk about CertiK chain.
+The [Shentu Discord](https://discord.com/invite/Q5a68GCY9Z) is a public discord channel to talk about Shentu chain.
 
-For non-public chain questions and discussions, please email to chain@certik.org
+For non-public chain questions and discussions, please email to info@Shentu.org
 
 Chain transactions as well as chain account creation can also be performed via the CLI tool or CLI-based RESTful servers.
 
 ## Latest Release Download
 
-The latest chain node binary and CLI tool binary, as well as genesis and sample smart contract files, can be downloaded from https://github.com/certikfoundation/chain/releases/.
+The latest chain node binary and CLI tool binary, as well as genesis and sample smart contract files, can be downloaded from https://github.com/shentufoundation/chain/releases/.
 
 ## Use CLI Tool to Access Testnet
 
 ### CLI Tool Configuration
 
-With `certik` one can create test account key pairs and interact with the testnet. Its configuration needs to be properly set as the following.
+With `Shentud` one can create test account key pairs and interact with the testnet. Its configuration needs to be properly set as the following.
 
 ```
-rm -rf ~/.certik
-certik config chain-id <chain-id>
-certik config node tcp://<full node>:<port>
-certik config trust-node true
+rm -rf ~/.shentud
+shentud config chain-id <chain-id>
+shentud config node tcp://<full node>:<port>
+shentud config trust-node true
 ```
 
-`certik` runs on Linux, Windows, and MacOS.
+`Shentu` runs on Linux, Windows, and MacOS.
 
 ### Create Test Accounts
 
 Make sure you have configured the CLI tool properly as described in the above section.
 
-To use the `CertiK Chain` and do transactions on the chain, one need to first create a chain account and then populate it with test tokens.
+To use the `Shentu Chain` and do transactions on the chain, one need to first create a chain account and then populate it with test tokens.
 
 First, create an account address and public / private key pair on your computer. In interactions with the chain, public address and key are used frequently. The private key is stored in your local computer and is needed to sign your transaction before submitting.
 
 ```
-$ certik keys add <account name>
+$ shentud keys add <account name>
 Enter a passphrase to encrypt your key to disk:
 Repeat the passphrase:
 
@@ -117,7 +117,7 @@ It is the only way to recover your account if you ever forget your password.
 ...
 ```
 
-Then, go to http://explorer.certik.foundation/faucet, submit your test account's address. The account will receive some amount of CTK for testing purpose. Please do not abuse the faucet as there are only limited number of tokens available for testnet.
+Then, go to http://explorer.shentu.foundation/faucet, submit your test account's address. The account will receive some amount of CTK for testing purpose. Please do not abuse the faucet as there are only limited number of tokens available for testnet.
 
 You can create multiple accounts for testing purpose.
 
@@ -127,17 +127,17 @@ Please note that the testnet may be restarted occasionally, so you may need to r
 
 It is possible to run your own full nodes and connect the CLI tool to them. In the next section you will be shown how to convert your full nodes into validator nodes.
 
-With `certik` one can run full nodes of the `CertiK Chain`. Its configuration needs to be properly initialized.
+With `Shentu` one can run full nodes of the `Shentu Chain`. Its configuration needs to be properly initialized.
 
 ```
-rm -rf ~/.certik
-certik init <node name>
+rm -rf ~/.shentud
+shentud init <node name>
 ```
 
 The full node needs to connect some existing nodes of the chain, which can be obtained from the mailing list. Open the node configuration file to edit them.
 
 ```
-vi ~/.certik/config/config.toml
+vi ~/.shentud/config/config.toml
 ```
 
 Edit the following lines.
@@ -148,44 +148,44 @@ seeds = "f4678480e4b7f1daee8ff47e6265954f8b57291d@54.234.180.96:26656,f6764b2a92
 ...
 ```
 
-Then copy the testnet genesis JSON file to the node configuration directory. The latest genesis file can be found [here](https://github.com/certikfoundation/chain/blob/master/genesis.json). Release-specific genesis file can be found in the [release download](https://github.com/certikfoundation/chain/releases/).
+Then copy the testnet genesis JSON file to the node configuration directory. The latest genesis file can be found [here](https://github.com/shentufoundation/chain/blob/master/genesis.json). Release-specific genesis file can be found in the [release download](https://github.com/shentufoundation/chain/releases/).
 
 ```
-cp genesis.json ~/.certik/config
+cp genesis.json ~/.shentud/config
 ```
 
 Start the full node. Note that it might take a while for the new full node to catch up on the chain history.
 
 ```
-certik start
+shentud start
 ```
 
 To connect to the full node from CLI tool running on the same machine, use `tcp://localhost:26657`.
 
 ## Convert a Full Node into Validator
 
-As `CertiK Chain` is designed with focus on ultimate blockchain security, one of the security requirements is that all validator nodes must be **certified** by either `CertiK` or other approved **certifiers**. The actual range of validator node ceritification is not fully defined for testnet, but in general `CertiK Chain` validator nodes are expected to be powerful with good connectivity, use latest official chain node software releases, and eventually run on secure systems software such as `CertiKOS` (this is unavailable during closed alpha).
+As `Shentu Chain` is designed with focus on ultimate blockchain security, one of the security requirements is that all validator nodes must be **certified** by either `Shentu` or other approved **certifiers**. The actual range of validator node ceritification is not fully defined for testnet, but in general `Shentu Chain` validator nodes are expected to be powerful with good connectivity, use latest official chain node software releases, and eventually run on secure systems software such as `ShentuOS` (this is unavailable during closed alpha).
 
 A validator node is assigned to a chain account, which should be created and charged with CTK following the `Create Test Accounts` section above.
 
-Before converting the above full node into a validator, it is required to get the node certified by `CertiK`, the only approved certifier at this moment. The is done by the following steps.
+Before converting the above full node into a validator, it is required to get the node certified by `Shentu`, the only approved certifier at this moment. The is done by the following steps.
 
 First, run the following on on your node instance.
 
 ```
-certik tendermint show-validator
+shentud tendermint show-validator
 ```
 
-Then send the pubkey to chain@certik.org with title "request to certify validator node" and optionally your reasoning on why this node should be approved to become a validator node (typically in terms of capacity, connectivity, maintenance, and security).
+Then send the pubkey to info@shentu.org with title "request to certify validator node" and optionally your reasoning on why this node should be approved to become a validator node (typically in terms of capacity, connectivity, maintenance, and security).
 
-Within 24 hours, CertiK will get back to you with either "certified" or "rejected" message.
+Within 24 hours, Shentu will get back to you with either "certified" or "rejected" message.
 
 Once receiving the "certified" message, you can proceed to convert your full node to become a validator node by following the instruction below.
 
 ```
-certik tx staking create-validator \
+shentud tx staking create-validator \
   --amount=<amount of uctk to delegate to the validator>uctk \
-  --pubkey=$(certik tendermint show-validator) \
+  --pubkey=$(shentud tendermint show-validator) \
   --moniker=<name of the validator, which can be diffferent from account name> \
   --commission-rate="0.10" \
   --commission-max-rate="0.20" \
@@ -197,59 +197,59 @@ certik tx staking create-validator \
   --from=<validator chain account name>
 ```
 
-If the transaction is successful, your validator should appear in either the `Active` or `Inactive` tabs on the [chain explorer's validators page](https://explorer.certik.foundation/validators).
+If the transaction is successful, your validator should appear in either the `Active` or `Inactive` tabs on the [chain explorer's validators page](https://explorer.shentu.foundation/validators).
 
 ### 
 
 ### Queries
 
-`certik` supports many query sub-commands. Below are some common examples. More details can be found in the command help printout.
+`Shentu` supports many query sub-commands. Below are some common examples. More details can be found in the command help printout.
 
 To query the current validator set
 
 ```
-certik query staking validators
+shentud query staking validators
 ```
 
 To query a block
 
 ```
-certik query block <height>
+shentud query block <height>
 ```
 
 To query a transaction
 
 ```
-certik query tx <transaction hash>
+shentud query tx <transaction hash>
 ```
 
 To query the status of an account
 
 ```
-certik query account <address>
+shentud query account <address>
 ```
 
 ### Transactions
 
-`certik` also supports many transaction subcommands. Below are some common examples. More details can be found in the command help printout.
+`Shentu` also supports many transaction subcommands. Below are some common examples. More details can be found in the command help printout.
 
 To transfer CTK from one account to another.
 
 ```
-certik tx send <sender address> <recipent address> <amount of uctk> --fees 5000uctk
+shentud tx send <sender address> <recipent address> <amount of uctk> --fees 5000uctk
 ```
 
 For validators, you can unjail yourself by making an unjail transaction if you are jailed.
 
 ```
-certik tx slashing unjail --from <validator operator name> --fees=5000uctk
+shentud tx slashing unjail --from <validator operator name> --fees=5000uctk
 ```
 
 ### CVM Smart Contracts
 
-`CertiK VM`, or CVM, is a core component of the `CertiK Chain`. CVM is compatible with EVM with security-focused extensions. Smart Contracts written in Solidity can be deployed and invoked on the CertiK Chain.
+`Shentu VM`, or CVM, is a core component of the `Shentu Chain`. CVM is compatible with EVM with security-focused extensions. Smart Contracts written in Solidity can be deployed and invoked on the shentud Chain.
 
-`certik` assumes Solidity compiler `solc` is in the path. See [here](https://solidity.readthedocs.io/en/latest/installing-solidity.html) for installation instructions.
+`Shentu` assumes Solidity compiler `solc` is in the path. See [here](https://solidity.readthedocs.io/en/latest/installing-solidity.html) for installation instructions.
 
 To deploy a simple smart contract from file `simple.sol'
 
@@ -269,7 +269,7 @@ contract SimpleStorage {
     }
 }
 
-$ certik  tx cvm deploy simple.sol --from <deployer address> --fees 5000uctk
+$ shentud  tx cvm deploy simple.sol --from <deployer address> --fees 5000uctk
 ...
 txhash: <transaction hash>
 ...
@@ -277,7 +277,7 @@ txhash: <transaction hash>
 To get the deployed contract address
 
 ```
-$ certik query tx <transaction hash>
+$ shentud query tx <transaction hash>
 ...
     - key: new-contract-address
       value: <deployed contract address>
@@ -287,7 +287,7 @@ $ certik query tx <transaction hash>
 To inspect contract code bytes deployed
 
 ```
-certik query cvm code <contract address>
+shentud query cvm code <contract address>
 6080604052348015600F57600080FD5B506004361060325760003560E01C806360FE47B114603757
 80636D4CE63C146062575B600080FD5B606060048036036020811015604B57600080FD5B81019080
 80359060200190929190505050607E565B005B60686088565B604051808281526020019150506040
@@ -298,13 +298,13 @@ certik query cvm code <contract address>
 To call SimpleStorage.set(123)
 
 ```
-certik tx cvm call <contract address> set 123 --from <caller address> --fees 5000uctk
+shentud tx cvm call <contract address> set 123 --from <caller address> --fees 5000uctk
 ```
 
 To call SimpleStorage.get()
 
 ```
-$ certik tx cvm call <contract address> get --from <caller address> --fees 5000uctk
+$ shentud tx cvm call <contract address> get --from <caller address> --fees 5000uctk
 ...
 txhash: <transaction hash>
 ...
@@ -313,7 +313,7 @@ txhash: <transaction hash>
 To verify the read out data is indeed 123 (0x7b)
 
 ```
-certik query tx <transaction hash>
+shentud query tx <transaction hash>
 ...
 data: 000000000000000000000000000000000000000000000000000000000000007B
 ...
@@ -324,10 +324,10 @@ data: 000000000000000000000000000000000000000000000000000000000000007B
 To start a local RESTful server connected to the full node connected above
 
 ```
-certik rest-server
+shentud rest-server
 ```
 
-you can look through the swagger documents through `localhost:1317/swagger/` while the `certik rest-server` is running.
+you can look through the swagger documents through `localhost:1317/swagger/` while the `Shentu rest-server` is running.
 
 For example, to query the current validators
 
