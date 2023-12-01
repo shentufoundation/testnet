@@ -67,7 +67,7 @@ With the launch of Mainnet, Shentu Foundation is managing a pair testnet with th
 
 The [Shentu Chain Explorer](https://explorer.shentu.foundation/) is public accessible and can be used to query on various status of the chain on the web.
 
-The [DeepWallet](https://wallet.shentu.foundation/) is public accessible and can be used to manage chain accounts, including CTK storage, staking, transfer, and voting, as well as smart contracts deploy and invocation.
+The [DeepWallet](https://wallet.shentu.technology/) is public accessible and can be used to manage chain accounts, including CTK storage, staking, transfer, and voting, as well as smart contracts deploy and invocation.
 
 The [Shentu Chain User Forum](https://forum.shentu.foundation/categories) is a public forum for chain announcements and discussions.
 
@@ -79,7 +79,7 @@ Chain transactions as well as chain account creation can also be performed via t
 
 ## Latest Release Download
 
-The latest chain node binary and CLI tool binary, as well as genesis and sample smart contract files, can be downloaded from https://github.com/shentufoundation/chain/releases/.
+The latest chain node binary and CLI tool binary, as well as genesis and sample smart contract files, can be downloaded from https://github.com/shentufoundation/shentu/releases/.
 
 ## Use CLI Tool to Access Testnet
 
@@ -94,7 +94,7 @@ shentud config node tcp://<full node>:<port>
 shentud config trust-node true
 ```
 
-`Shentu` runs on Linux, Windows, and MacOS.
+`shentud` runs on Linux, Windows, and MacOS.
 
 ### Create Test Accounts
 
@@ -117,7 +117,7 @@ It is the only way to recover your account if you ever forget your password.
 ...
 ```
 
-Then, go to http://explorer.shentu.foundation/faucet, submit your test account's address. The account will receive some amount of CTK for testing purpose. Please do not abuse the faucet as there are only limited number of tokens available for testnet.
+Then, go to http://explorer.shentu.technology/faucet, submit your test account's address. The account will receive some amount of CTK for testing purpose. Please do not abuse the faucet as there are only limited number of tokens available for testnet.
 
 You can create multiple accounts for testing purpose.
 
@@ -148,7 +148,7 @@ seeds = "f4678480e4b7f1daee8ff47e6265954f8b57291d@54.234.180.96:26656,f6764b2a92
 ...
 ```
 
-Then copy the testnet genesis JSON file to the node configuration directory. The latest genesis file can be found [here](https://github.com/shentufoundation/chain/blob/master/genesis.json). Release-specific genesis file can be found in the [release download](https://github.com/shentufoundation/chain/releases/).
+Then copy the testnet genesis JSON file to the node configuration directory. The latest genesis file can be found [here](https://github.com/shentufoundation/shentu/blob/master/genesis.json). Release-specific genesis file can be found in the [release download](https://github.com/shentufoundation/shentu/releases/).
 
 ```
 cp genesis.json ~/.shentud/config
@@ -197,7 +197,7 @@ shentud tx staking create-validator \
   --from=<validator chain account name>
 ```
 
-If the transaction is successful, your validator should appear in either the `Active` or `Inactive` tabs on the [chain explorer's validators page](https://explorer.shentu.foundation/validators).
+If the transaction is successful, your validator should appear in either the `Active` or `Inactive` tabs on the [chain explorer's validators page](https://explorer.shentu.technology/validators).
 
 ### 
 
@@ -231,7 +231,7 @@ shentud query account <address>
 
 ### Transactions
 
-`Shentu` also supports many transaction subcommands. Below are some common examples. More details can be found in the command help printout.
+`shentud` also supports many transaction subcommands. Below are some common examples. More details can be found in the command help printout.
 
 To transfer CTK from one account to another.
 
@@ -327,7 +327,7 @@ To start a local RESTful server connected to the full node connected above
 shentud rest-server
 ```
 
-you can look through the swagger documents through `localhost:1317/swagger/` while the `Shentu rest-server` is running.
+you can look through the swagger documents through `localhost:1317/swagger/` while the `shentud rest-server` is running.
 
 For example, to query the current validators
 
